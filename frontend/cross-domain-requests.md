@@ -10,7 +10,7 @@ They are:
   * Jsonp: 
     - `<script>` is one of the places where we can load resources in other domains, 
     -  except that you can pass the name of a defined function `f` to the url,
-    - then the server can return the code `f(resources)`, so that you can handle `resources` in your own functio `f`
+    - then the server can return the code `f(resources)`, so that you can handle `resources` in your own function `f`
     - Limitation: you can only GET but not POST; you need a Jsonp-supported server
   * CORS: Cross Origin Resource Sharing
     - Add `Access-Control-Allow-Origin` HTTP header in server response
