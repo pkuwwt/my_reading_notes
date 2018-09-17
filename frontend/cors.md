@@ -12,7 +12,7 @@ They are:
     -  except that you can pass the name of a defined function `f` to the url,
     - then the server can return the code `f(resources)`, so that you can handle `resources` in your own functio `f`
     - Limitation: you can only GET but not POST; you need a Jsonp-supported server
-  * CORS: 
+  * CORS: Cross Origin Resource Sharing
     - Add `Access-Control-Allow-Origin` HTTP header in server response
     - Limitation: not supported by legacy browser; you need to own the server
     - refer to [Cross Domain Requests in JavaScript](https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/)
