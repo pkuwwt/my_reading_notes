@@ -20,6 +20,6 @@ They are:
     - the origin of `<iframe src="http://xxx.com">` is specified by its `src` `http://xxx.com`, 
     - so you can request resources in the domain of `http://xxx.com` in the iframe page
     - then you can send message from your main page to the iframe page by `postMessage`
-    - refer to [Cross Domain Messaging with posgMessage](http://blog.teamtreehouse.com/cross-domain-messaging-with-postmessage)
+    - refer to [Cross Domain Messaging with postMessage](http://blog.teamtreehouse.com/cross-domain-messaging-with-postmessage)
     
 The SOP has nothing to do with the server, which is the limitation of browsers used to ensure security. 
