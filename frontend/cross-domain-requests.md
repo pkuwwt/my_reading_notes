@@ -1,7 +1,7 @@
 
 # Four ways to circumvent the SOP
 
-There are three ways to circumvent the [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+There are four ways to circumvent the [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 enforced by browsers, i.e. you can't request resources in another domain programmatically.
 
 They are:
