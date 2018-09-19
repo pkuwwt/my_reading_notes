@@ -15,7 +15,7 @@ They are:
   * CORS: Cross Origin Resource Sharing
     - Add `Access-Control-Allow-Origin` HTTP header in server response
     - Limitation: not supported by legacy browser; you need to own the server
-    - refer to [Cross Domain Requests in JavaScript](https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/)
+    - refer to [Cross Domain Requests in JavaScript](https://jvaneyck.wordpress.com/2014/01/07/cross-domain-requests-in-javascript/) and  [Cross-document Messaging Wiki](https://en.m.wikipedia.org/wiki/Cross-document_messaging)
   * `iframe` and `postMessage`: 
     - the origin of `<iframe src="http://xxx.com">` is specified by its `src` `http://xxx.com`, 
     - so you can request resources in the domain of `http://xxx.com` in the iframe page
