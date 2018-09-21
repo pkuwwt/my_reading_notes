@@ -19,6 +19,8 @@ elseif %filetype=="javascript"
   exec "!node %"
 endif
 endfunc
+
+map <F5> :call RunCode()<CR>
 ```
 
 For windows, we can use `for /f %i in ('npm bin') do %i\mocha`, which seems not very useful though.
