@@ -1,10 +1,15 @@
 
 # CMD
 
+## CMD Basic
+
+  * List all commands: `help`
+  * Help for a command: `your_command /?`, for example `netstat /?`
+
 ## How to list all open ports
 
 ```
-netstat -ano
+netstat -abno
 ```
 
 ## How to find string
