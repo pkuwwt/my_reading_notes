@@ -26,6 +26,6 @@ map <F5> :call RunCode()<CR>
 For windows, we can use `for /f %i in ('npm bin') do %i\mocha`, which seems not very useful though. A solution for `vim` in
 windows and any other systems is:
 ```
-let bin = substitude(system('npm bin'), '\s$', '', 'g');
+let bin = substitude(system('npm bin'), '\(\n\|\r\|\s\)*$', '', 'g');
 exec "!" . bin . "/mocha"
 ```
