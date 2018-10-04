@@ -29,3 +29,10 @@
 ## Headerless Testings
 
   * PhantomJS
+
+## Vue.js Testings
+
+  * [Vue Test Utils](https://vue-test-utils.vuejs.org/)
+  * [Testing Vue Components with Mocha and Webpack](https://itnext.io/testing-vue-components-with-mocha-and-webpack-594a9f7e28b9)
+  * [Vue.js unit-testing](https://vuejs.org/v2/guide/unit-testing.html)
+  
