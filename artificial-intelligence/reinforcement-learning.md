@@ -9,6 +9,8 @@ Two basic questions:
   * How to interact with environment effectively? **exploration** vs. **exploitation**, **sample efficiency**
   * How to learn experience effectively? **Long-term credits assignment**, **sparse reward signals**
 
+### RL as an optimization problem
+
 ### Policy Gradient
 
 ### Model-based vs. Model-free
