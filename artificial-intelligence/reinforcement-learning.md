@@ -5,7 +5,17 @@
 
 ### Basic Idea
 
+Two basic questions:
+  * How to interact with environment effectively? **exploration** vs. **exploitation**, **sample efficiency**
+  * How to learn experience effectively? **Long-term credits assignment**, **sparse reward signals**
+
 ### Policy Gradient
+
+### Model-based vs. Model-free
+
+### Deterministic vs. Stochastic
+
+### Action-based vs. Policy-based
 
 ## Advanced RL
 
@@ -15,6 +25,9 @@
 
   * [HIRO](https://arxiv.org/pdf/1805.08296.pdf) by Google Brain
 
+### Memory and Predictive modeling
+
+### Model-based and Model-free combined
 
 # References
 
