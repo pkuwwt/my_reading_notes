@@ -13,6 +13,9 @@ Two basic questions:
 
 ### Policy Gradient
 
+#### REINFORCE algorithm
+REINFORCE algorithm is the RL method used in AlphaGO.
+
 ### Model-based vs. Model-free
 
 ### Deterministic vs. Stochastic
@@ -22,6 +25,10 @@ Two basic questions:
 ## Advanced RL
 
 ### Deep Q-Learning
+
+#### DQN
+
+#### A3C
 
 ### Hierarchical RL
 
