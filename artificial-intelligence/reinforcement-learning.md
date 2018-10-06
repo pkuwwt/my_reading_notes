@@ -3,6 +3,8 @@
 
 ## Introduction
 
+### Basic Idea
+
 ### Policy Gradient
 
 ## Advanced RL
