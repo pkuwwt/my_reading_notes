@@ -31,6 +31,7 @@ REINFORCE algorithm is the RL method used in AlphaGO.
 \[
 Q(s_t,a) \leftarrow Q(s_t,a) + \alpha\left[r_{t+1}+\gamma\max_pQ'(s_{t+1},p)-Q(s_t,a)\right]
 \]
+
 where $Q'$ is the less frequently updated version of  $Q$.
 
 #### A3C
