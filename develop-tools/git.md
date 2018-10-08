@@ -1,6 +1,45 @@
 
 # Git Recipes
 
+### Revise commit
+### Revise last commit message
+
+```
+git commit --amend -m 'new commit message'
+```
+
+### Add new files to last commit
+
+```
+git add new-file.txt
+git commit --amend --no-edit
+```
+
+### Revise author of last commit
+
+```
+git commit --amend --author "new author"
+```
+
+NB: only use `amend` in local repositories.
+
+
+## Rebasing
+
+A diagram that explains `git checkout feature && git rebase release`:
+
+```
+release branch: commit1 -- commit2 -- commit3
+feature branch: commit4 -- commit5
+resulting branch: commit1 -- commit2 -- commit3 -- commit4 -- commit5
+```
+
+The `git rebase release` will do:
+
+  1. point to head of `release` branch: `commit3`
+  2. add `commit4` and `commit5` one by one, and resolve the conflicts manually
+  
+So different from `git merge`, which is often used to add your commits back to master branch, `git branch` doesn't generate new commits, which is suitable to keep your local repository update with remote repository.
 
 ## References
 
