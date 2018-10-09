@@ -9,6 +9,32 @@ Two basic questions:
   * How to interact with environment effectively? **exploration** vs. **exploitation**, **sample efficiency**
   * How to learn experience effectively? **Long-term credits assignment**, **sparse reward signals**
 
+![rl-diagram](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)
+
+Elements of RL:
+
+  * Modeling: Agent, States, Actions
+  * Elements: Policy, Reward function, Value function, Model of env (optioanl)
+  
+### Concepts of RL
+
+  * States $\mathcal{S}$
+  * Actions $\mathcal{A}$
+  * Policy:
+    * Deterministic Policy: $\pi_t(s):\mathcal{S}\to\mathcal{A}$
+    * Stochastic Policy: $\pi_t(a|s):\mathcal{S}\times\mathcal{A}\to[0,1]$
+  * Value function $v_t(s): \mathcal{S}\to\mathbb{R}$
+  * Reward after action $A_t\in\mathcal{A}$: $R_{t+1}\in\mathbb{R}$
+  * Model of env: expected return, or transitio probability of states
+  * Discounting return:
+$$
+G_t = R_{t+1} + \gamma R_{t+2} + \cdots = \sum_{k=0}^\infty\gamma^kR_{t+k+1}
+$$
+  * Task:
+    * Episodic task: $t=1,2,\cdots T$
+    * Continuing Task: $t=1,2,\cdots,\infty$
+  
+
 ### RL as an optimization problem
 
 ### Policy Gradient
