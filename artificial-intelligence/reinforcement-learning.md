@@ -62,6 +62,13 @@ where $Q'$ is the less frequently updated version of  $Q$.
 
 #### A3C
 
+### DPG
+
+#### DDPG
+
+ * [Continuous control with deep reinforcement learning.](https://arxiv.org/pdf/1509.02971)
+
+
 ### Hierarchical RL
 
   * [HIRO](https://arxiv.org/pdf/1805.08296.pdf) by Google Brain
