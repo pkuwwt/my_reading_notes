@@ -9,7 +9,7 @@ of the algorithm.
 Given a large positive integer $N$, find its prime factor $p$:
 
   * Psedo-Randomly select a number $a<N$, assuming $GCD(a,N)=1$ (or we are done)
-  * Use **Quantom Fourier Transform** (QFT) to find the (minimal) period $r$ of $f(x)=a^x | mod N$
+  * Use **Quantom Fourier Transform** (QFT) to find the (smallest) period $r$ of $f(x)=a^x | mod N$
   * Assume $r$ is even (or we repeat again), and $a^{r/2}+1\equiv 0 mod N$ (or we are done), compute $GCD(a^{r/2}\pm1,N)$
     * Because $r$ is the smallest period, $a^{r/2}-1$ cannot be the factor of $N$.
     
