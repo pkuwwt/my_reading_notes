@@ -54,6 +54,8 @@ REINFORCE algorithm is the RL method used in AlphaGO.
 
 #### DQN
 
+  * [Human-level Control Through Deep Reinforcement Learning, 2015](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf)
+
 \[
 Q(s_t,a) \leftarrow Q(s_t,a) + \alpha\left[r_{t+1}+\gamma\max_pQ'(s_{t+1},p)-Q(s_t,a)\right]
 \]
@@ -61,6 +63,8 @@ Q(s_t,a) \leftarrow Q(s_t,a) + \alpha\left[r_{t+1}+\gamma\max_pQ'(s_{t+1},p)-Q(s
 where $Q'$ is the less frequently updated version of  $Q$.
 
 #### A3C
+
+  * [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/pdf/1602.01783)
 
 ### DPG
 
