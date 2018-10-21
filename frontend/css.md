@@ -8,7 +8,7 @@
     * [`transition-property`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property): the name of the CSS property to transition, e.g. `background-color`
     * [`transition-duration`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration): how many seconds or milliseconds, e.g. `3s`, `100ms`
     * [`transition-timing-function`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function): the name of preset functions, e.g. `linear`, `ease-in` (speed up), `ease-out` (slow down), `ease-in-out`, or a `cubic-bezier(x1,y1,x2,y2)` expression, which can be tuned by develop tools in Firefox or Chrome.
-    * [`transition-dealy`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay): how long to wait before the starting the duration
+    * [`transition-delay`](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay): how long to wait before the starting the duration
   * Transitioning multiple properties: separate multiple `transition` quadruple by comma, or separate multiple properties of `transition-property` by comma
   * How to activate a transition: using pseudo classes like `:hover`, `:focus` or `:active`, or Javascript code: `el.classList.toggle('is-active')` to switch between `.button` and `.button.is-active`.
   * Browser compatibility:
