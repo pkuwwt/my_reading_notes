@@ -7,5 +7,4 @@
 
 ## Tools
 
-  * [graph_nets](https://github.com/deepmind/graph_nets)
-  
+  * [graph_nets](https://github.com/deepmind/graph_nets) by DeepMind: based on TensorFlow
