@@ -3,6 +3,8 @@
 
 ## GAN Overview
 
+  * [Original GAN Paper](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)
+
 ## Deep Convolutional GAN (DCGAN)
 
 ## CycleGAN
