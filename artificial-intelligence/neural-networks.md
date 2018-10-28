@@ -1,7 +1,8 @@
 
 ## References
 
-  * [Learning Deep Architectures for AI](https://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf) by Yoshua Bengio
+  * [Learning Deep Architectures for AI](https://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf) by Yoshua Bengio, 2009: Deep Belief Network, Restricted Boltzmann Machines
+  * [Deep Learning Book](https://www.deeplearningbook.org/), 2016
 
 ##  Gallary of Neural  Networks
 
