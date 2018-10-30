@@ -8,6 +8,8 @@
 
 ## Vectors
 
+  * [Geo-Maps](https://github.com/simonepri/geo-maps): Programmingly generated maps from OpenStreetMap
+  * [china-divisions](https://www.npmjs.com/package/china-division): Five levels down to villages
   * [Country Boundary (improved for China)](https://github.com/simaQ/maps-data)
   * [Boundary data for World Countries and China Provinces](http://www.voidcn.com/article/p-aiwvscxh-hh.html)
   * [ECharts Cities](https://github.com/echarts-maps/echarts-cities-js)
