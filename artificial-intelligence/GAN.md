@@ -15,6 +15,7 @@
 
   * [CycleGAN Blog](https://hardikbansal.github.io/CycleGANBlog/)
   * [Source Code](https://github.com/junyanz/CycleGAN)
+  * [Toronto Courseware handouts](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/assignments/a4-handout.pdf)
 
 ## BigGAN
 
