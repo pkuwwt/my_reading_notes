@@ -28,4 +28,5 @@ gcc -E hello.c -o hello.i
 ## References
 
   * [Story behind hello world](https://www.youtube.com/watch?v=q-F1qSMkb2w)
+  * [The four stages of compiling a C program](https://www.calleerlandsson.com/posts/the-four-stages-of-compiling-a-c-program/)
   
