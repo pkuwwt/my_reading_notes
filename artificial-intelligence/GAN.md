@@ -29,3 +29,7 @@
 
   * [On Convergence and Stability of GANs](https://arxiv.org/abs/1705.07215)
   * 
+
+## References
+
+  * [GAN paper list and review](https://spark-in.me/post/gan-paper-review)
