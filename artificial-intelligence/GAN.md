@@ -33,3 +33,4 @@
 ## References
 
   * [GAN paper list and review](https://spark-in.me/post/gan-paper-review)
+  * [GAN serial articles by Jonathan Hui](https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b?source=user_profile---------36------------------)
