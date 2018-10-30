@@ -10,6 +10,7 @@
 
   * [Country Boundary (improved for China)](https://github.com/simaQ/maps-data)
   * [Boundary data for World Countries and China Provinces](http://www.voidcn.com/article/p-aiwvscxh-hh.html)
+  * [ECharts Cities](https://github.com/echarts-maps/echarts-cities-js)
 
 
 ## Services
