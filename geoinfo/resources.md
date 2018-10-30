@@ -13,6 +13,8 @@
 
 ## Services
 
+  * [Virtual City Map](https://nrw.virtualcitymap.de/#/)
+
 
 ## Code and Software
   * [Server and frontend for a GIS service](https://gitlab.vgiscience.de/altai/uch-enmek)
