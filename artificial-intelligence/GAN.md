@@ -16,6 +16,7 @@
   * [CycleGAN Blog](https://hardikbansal.github.io/CycleGANBlog/)
   * [Source Code](https://github.com/junyanz/CycleGAN)
   * [Toronto Courseware handouts](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/assignments/a4-handout.pdf)
+  * [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/pdf/1703.10593.pdf), 2018
 
 ## BigGAN
 
