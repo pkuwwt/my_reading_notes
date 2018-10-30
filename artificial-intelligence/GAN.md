@@ -20,6 +20,10 @@
 ## BigGAN
 
   * [Medium Article](https://medium.com/syncedreview/biggan-a-new-state-of-the-art-in-image-synthesis-cf2ec5694024)
+  
+## cGAN
+
+  * [Slides](https://filebox.ece.vt.edu/~jbhuang/teaching/ece6554/sp17/lectures/cGAN-topic.pdf)
 
 ## Evaluation of GAN
 
