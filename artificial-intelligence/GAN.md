@@ -7,6 +7,10 @@
 
 ## Deep Convolutional GAN (DCGAN)
 
+## InfoGAN
+
+  * [InfoGAN: Interpretable Representation Learning by Information Maximizating Generative Adversarial Nets](https://arxiv.org/pdf/1606.03657.pdf)
+
 ## CycleGAN
 
   * [CycleGAN Blog](https://hardikbansal.github.io/CycleGANBlog/)
@@ -15,3 +19,8 @@
 ## BigGAN
 
   * [Medium Article](https://medium.com/syncedreview/biggan-a-new-state-of-the-art-in-image-synthesis-cf2ec5694024)
+
+## Evaluation of GAN
+
+  * [On Convergence and Stability of GANs](https://arxiv.org/abs/1705.07215)
+  * 
