@@ -13,7 +13,7 @@
   * [Country Boundary (improved for China)](https://github.com/simaQ/maps-data)
   * [Boundary data for World Countries and China Provinces](http://www.voidcn.com/article/p-aiwvscxh-hh.html)
   * [ECharts Cities](https://github.com/echarts-maps/echarts-cities-js)
-
+  * [GDAM](https://gadm.org/): maps for all countries
 
 ## Services
 
