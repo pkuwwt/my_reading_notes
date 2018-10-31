@@ -14,6 +14,8 @@
   * [Boundary data for World Countries and China Provinces](http://www.voidcn.com/article/p-aiwvscxh-hh.html)
   * [ECharts Cities](https://github.com/echarts-maps/echarts-cities-js)
   * [GDAM](https://gadm.org/): maps for all countries
+  * [OpenMapTiles](https://openmaptiles.org): open source maps for self-hosting
+  
 
 ## Services
 
