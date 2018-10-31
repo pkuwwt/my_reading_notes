@@ -28,3 +28,9 @@ map.on('drag', function() {
     map.panInsideBounds(bounds, { animate: false });
 });
 ```
+
+## Dispaly leaflet in HTML Modal
+Call the following code when the Modal is shown:
+```javascript
+setTimeout(() => map.invalidateSize(), 10)
+```
