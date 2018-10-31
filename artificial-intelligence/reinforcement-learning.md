@@ -87,3 +87,4 @@ where $Q'$ is the less frequently updated version of  $Q$.
   * [Beyond DQN/A3C: A Survey in Advanced Reinforcement Learning](https://towardsdatascience.com/advanced-reinforcement-learning-6d769f529eb3)
   * [【高级强化学习综述】层次强化学习、记忆与预测模型](https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q)
   * [Welcome to deep reinforcement learning part 1:  DQN](https://towardsdatascience.com/welcome-to-deep-reinforcement-learning-part-1-dqn-c3cab4d41b6b)
+  * [当我们在谈论 DRL：从Q-learning到DQN](https://zhuanlan.zhihu.com/p/31922015)
