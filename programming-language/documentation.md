@@ -17,3 +17,4 @@
 ## Vue.js
 
   * [Documenting Your Vue.js Component with propdoc](https://alligator.io/vuejs/propdoc-document-components/)
+  * [jsdoc-vuejs](https://github.com/Kocal/jsdoc-vuejs)
