@@ -37,3 +37,4 @@
   * [GAN paper list and review](https://spark-in.me/post/gan-paper-review)
   * [GAN series articles by Jonathan Hui](https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b?source=user_profile---------36------------------)
   * [GAN Deep Learning Architecture - reviews](https://sigmoidal.io/beginners-review-of-gan-architectures/)
+  * [InfoGAN: Generative Adversarial Networks Part III](https://towardsdatascience.com/infogan-generative-adversarial-networks-part-iii-380c0c6712cd)
