@@ -8,4 +8,5 @@
 
   * [Introducing AdaNet: Fast and Flexible](https://ai.googleblog.com/2018/10/introducing-adanet-fast-and-flexible.html)
   * [TensorFlow Implementation](https://github.com/tensorflow/adanet)
+  * [TensorFlow AdaNet Tutorial](https://github.com/tensorflow/adanet/tree/master/adanet/examples/tutorials)
   * [AdaNet: Adaptive Structural Learning of Artificial Neural Networks](https://arxiv.org/abs/1607.01097)
