@@ -26,6 +26,7 @@
   
 ## cGAN
 
+  * [Conditioanl Generative Adversarial Nets](https://arxiv.org/abs/1411.1784)
   * [Slides](https://filebox.ece.vt.edu/~jbhuang/teaching/ece6554/sp17/lectures/cGAN-topic.pdf)
   * [《Conditional Generative Adversarial Nets》阅读笔记](https://zhuanlan.zhihu.com/p/23648795)
 
