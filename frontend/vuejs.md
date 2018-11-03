@@ -7,7 +7,7 @@ The reactivity or two-way binding of Vue.js is based on `Object.defineProperty` 
 
 ![](https://image-static.segmentfault.com/288/540/2885406330-5adfe896c01b0_articlex)
 
-Initially， Vue.js will setup getters/setters for items in `$data`, and then collect all the referred item during the rendering. If any of the watched items is changed, it will trigger an update.
+Initially, Vue.js will setup getters/setters for items in `$data`, and then collect all the referred item during the rendering. If any of the watched items is changed, it will trigger an update.
 
 ## References
 
