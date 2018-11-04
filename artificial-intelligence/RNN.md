@@ -7,6 +7,10 @@
 
 ## GRU
 
+## MGU
+
+## SRU
+
 ## LSTM with Attention
 
 ## References
