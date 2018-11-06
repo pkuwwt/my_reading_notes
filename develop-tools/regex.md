@@ -5,7 +5,7 @@
 
 ### Fundamental Structures
 
-The structure of a regular expression is a concatenation of several basic structures: element and its optional repetition.
+The structure of a regular expression is a concatenation of several basic structures: `[modifier]element[repetition]`, where `modifier` and `repetition` is optional.
 
 For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b-c-ABCCC1234C`, where
 
