@@ -89,6 +89,7 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
   * [vim Regex](http://vimregex.com/)
   * [C++/11 regex](http://www.cplusplus.com/reference/regex/): use [ECMAScript regex syntax](http://www.cplusplus.com/reference/regex/ECMAScript/)
   * [JavaScript regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+  * [Java 7 Regex](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html)
   
   
   
