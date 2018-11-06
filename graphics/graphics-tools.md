@@ -24,3 +24,8 @@ convert -loop 0 -delay 100 input1.png input2.png output.gif
 which create an endless GIF with interval `100ms`.
 
 ## GraphicsMagick
+
+
+## InkScape
+
+## GIMP
