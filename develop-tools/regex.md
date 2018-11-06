@@ -22,7 +22,7 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 
 #### Elements
 
-  * match any character: `.`
+  * match any character: `.` (with a few exception: `\n`,`\r`, and maybe some others)
   * ordinary characters: `0-9`, `a-zA-Z`, and any visible characters
   * character classes
   * special expressions
