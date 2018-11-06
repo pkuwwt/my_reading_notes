@@ -52,6 +52,10 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 
 ### Back References and Subexpressions
 
+### Modifiers
+
+### Flags
+
 ## Implementation and Finite State Machine
 
 ## Basic Regular Expression (BRE)
@@ -82,6 +86,7 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 
 ## Reference
 
+  * [The Premier website about Regular Expressions](https://regular-expressions.mobi/)
   * [GNU Grep 3.0 Regex](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions)
   * [Perl Regex](https://perldoc.perl.org/perlre.html): PCRE
   * [PHP Regex](http://php.net/manual/en/reference.pcre.pattern.syntax.php): use PCRE
