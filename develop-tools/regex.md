@@ -17,7 +17,7 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 |     char      |   `B`         |                |      1         |  `B`             |
 |     char      |   `C`         |     `{2,3}`    |      3         |  `CCC`           |
 |     class     |   `[0-9]`     |       `+`      |      4         |  `1234`          |
-| subexpression |   `(B\|C)      |                |      1         |  `C`             |
+| subexpression |   `(B\|C)`    |                |      1         |  `C`             |
 |    anchor     |   `$`         |                |      1         |  end of string   |
 
 #### Elements
