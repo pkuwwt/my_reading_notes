@@ -84,7 +84,7 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 
   * [GNU Grep 3.0 Regex](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions)
   * [Perl Regex](https://perldoc.perl.org/perlre.html): PCRE
-  * [PHP Regexp[(http://php.net/manual/en/reference.pcre.pattern.syntax.php): use PCRE
+  * [PHP Regex](http://php.net/manual/en/reference.pcre.pattern.syntax.php): use PCRE
   * [Python 3 re package](https://docs.python.org/3/library/re.html)
   * [vim Regex](http://vimregex.com/)
   * [C++/11 regex](http://www.cplusplus.com/reference/regex/): use [ECMAScript regex syntax](http://www.cplusplus.com/reference/regex/ECMAScript/)
