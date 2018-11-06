@@ -29,3 +29,5 @@ which create an endless GIF with interval `100ms`.
 ## InkScape
 
 ## GIMP
+
+## GEGL
