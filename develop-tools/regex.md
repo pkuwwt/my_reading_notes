@@ -56,6 +56,8 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 
 ### Flags
 
+### Greedy Match
+
 ## Implementation and Finite State Machine
 
 ## Basic Regular Expression (BRE)
