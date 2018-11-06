@@ -64,7 +64,7 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 
 ## Regular Expression in Vim
 
-## Regular Expression in C++/Boost
+## Regular Expression in C++11
 
 ## Regular Expression in Java
 
@@ -79,3 +79,16 @@ For example regular expression `^.*ABC{2,3}[0-9]+(B|C)$` matches the string `a-b
 ### sed
 
 ### find
+
+## Reference
+
+  * [GNU Grep 3.0 Regex](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions)
+  * [Perl Regex](https://perldoc.perl.org/perlre.html): PCRE
+  * [PHP Regexp[(http://php.net/manual/en/reference.pcre.pattern.syntax.php): use PCRE
+  * [Python 3 re package](https://docs.python.org/3/library/re.html)
+  * [vim Regex](http://vimregex.com/)
+  * [C++/11 regex](http://www.cplusplus.com/reference/regex/): use [ECMAScript regex syntax](http://www.cplusplus.com/reference/regex/ECMAScript/)
+  * [JavaScript regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+  
+  
+  
