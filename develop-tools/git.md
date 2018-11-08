@@ -41,6 +41,15 @@ The `git rebase release` will do:
   
 So different from `git merge`, which is often used to add your commits back to master branch, `git branch` doesn't generate new commits, which is suitable to keep your local repository update with remote repository.
 
+
+## Tag
+
+  * add tag: `git tag -a v1.0 -m 'version 1.0'`
+  * show tag: `git show v1.0`
+  * show all tags: `git tag`
+  * push tag to remote: `git push origin v1.0`
+  * push all tags to remote: `git push --tags`
+
 ## References
 
   * [How to become a Git expert](https://medium.freecodecamp.org/how-to-become-a-git-expert-e7c38bf54826)
