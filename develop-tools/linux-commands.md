@@ -10,6 +10,10 @@
   * Linux version: `uname -a`
   * Linux distribution: `cat /etc/lsb-release`
   * 
+  
+## User
+
+  * change password: `sudo passwd user`
 
 ## Text Processing
 
