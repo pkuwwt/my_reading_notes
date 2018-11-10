@@ -15,7 +15,7 @@ var {spawn} = require('child_process');
 var process = spawn('./test.exe');
 process.stdout.setEncoding('utf-8');
 process.stdout.on('data', data => console.log(data));
-process.stdin.write('message' + '\n');  // NB: the '\n' is necessary for a piped program
+process.stdin.write('message' + '\n');  // NB: the '\n' is necessary
 ```
 
 ## Node.js in Windows
