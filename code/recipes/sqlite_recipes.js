@@ -12,9 +12,9 @@ const wrap_db_func = (funcname, msg) => (db, ...params) => new Promise((res,rej)
 
 const close_db = db => wrap_db_func('close', 'close finished');
 
-const execute_sql_first = (db, sql, params) => wrap_db_func('get');
+const execute_sql_first = wrap_db_func('get');
 
-const execute_sql_all = (db, sql, params) => wrap_db_func('all');
+const execute_sql_all = wrap_db_func('all');
 
 const column_to_spec = ({name,type,property}) => {
     if(!name) console.error('null name in column_spec');
