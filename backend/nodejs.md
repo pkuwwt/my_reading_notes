@@ -9,6 +9,15 @@ There are three ways to do that:
   * compile a `node-nyp` module over the dynamic libraries
   * use `child_process` library to create a sub-process, and comunicate it through `stdin/stdout`. We'd best create an executable which supports pipe.
 
+Sample code for `child_process`:
+```javascript
+var {spawn} = require('child_process');
+var process = spawn('./test.exe');
+process.stdout.setEncoding('utf-8');
+process.stdout.on('data', data => console.log(data));
+process.stdin.write('message' + '\n');  // NB: the '\n' is necessary for a piped program
+```
+
 ## Node.js in Windows
 
 ### Call Functions in Native DLL
