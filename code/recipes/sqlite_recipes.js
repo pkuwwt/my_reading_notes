@@ -10,7 +10,7 @@ const wrap_db_func = (funcname, msg) => (db, ...params) => new Promise((res,rej)
     db[funcname].apply(db, [...params, (err,arg) => handle_error(err, arg||msg).then(res).catch(rej)]); 
 });
 
-const close_db = db => wrap_db_func('close', 'close finished');
+const close_db = wrap_db_func('close', 'close finished');
 
 const execute_sql_first = wrap_db_func('get');
 
