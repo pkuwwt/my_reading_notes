@@ -31,12 +31,13 @@ const row_to_sql = row => row.map(value_to_sql).join(',');
 const sql_search_table = tbname => `SELECT name FROM sqlite_master WHERE type='table' AND name='${tbname}';`;
 const sql_create_table = (tbname, columns) => `CREATE TABLE IF NOT EXISTS ${tbname} (${columns_to_spec(columns)});`;
 const sql_delete_table = tbname => `DROP TABLE IF EXISTS ${tbname};`;
+const sql_insert_row = (tbname, columns, row) => `INSERT INTO ${tbname} (${columns_names(columns)}) VALUES (${row_to_sql(row)});`;
 
 const has_table = (db, tbname) => execute_sql_first(db, sql_search_table(tbname));
 
 const delete_table = (db, tbname) = execute_sql_first(db, sql_delete_table(tbname));
 
-const insert_row = (db,tbname,columns,row) => execute_sql_first(db, sql_insert(tbname, columns_names(columns), row_to_sql(row)));
+const insert_row = (db,tbname,columns,row) => execute_sql_first(db, sql_insert_row(tbname, columns, row));
 
 module.exports = {
     open_db,
