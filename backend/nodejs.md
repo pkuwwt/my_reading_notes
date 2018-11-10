@@ -1,6 +1,14 @@
 
 # Node.js
 
+## Communication with Dynamic Libraries
+
+There are three ways to do that:
+
+  * use `ffi` library to wrap the C language interface of the dynamic libraries
+  * compile a `node-nyp` module over the dynamic libraries
+  * use `child_process` library to create a sub-process, and comunicate it through `stdin/stdout`. We'd best create an executable which supports pipe.
+
 ## Node.js in Windows
 
 ### Call Functions in Native DLL
