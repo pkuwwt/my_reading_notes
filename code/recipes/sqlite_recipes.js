@@ -32,13 +32,13 @@ const open_db = file => new sqlite3.Database(file);
 const close_db = wrap_db_func('close', 'close finished');
 const has_table = (db, tbname) => execute_sql_get_first(db, sql_search_table(tbname));
 /**
-  * @param {Array} columns Specify the definition of each column, 
-  *                        in the form of [{name,type,property}], where the `property` is optional
+  * @param {Object[]} columns - Specify the definition of each column, 
+  *                             in the form of [{name,type,property}], where the `property` is optional
   **/
 const create_table = (db,tbname,columns) => execute_sql_run(db, sql_create_table(tbname, columns));
 const delete_table = (db, tbname) => execute_sql_run(db, sql_delete_table(tbname));
 /**
-  * @param {Array} row  the list of the values for each column
+  * @param {Array} row - the list of the values for each column
   **/
 const insert_row = (db,tbname,columns,row) => execute_sql_run(db, sql_insert_row(tbname, columns, row));
 
