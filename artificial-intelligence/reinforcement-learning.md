@@ -90,3 +90,4 @@ where $Q'$ is the less frequently updated version of  $Q$.
   * [【高级强化学习综述】层次强化学习、记忆与预测模型](https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q)
   * [Welcome to deep reinforcement learning part 1:  DQN](https://towardsdatascience.com/welcome-to-deep-reinforcement-learning-part-1-dqn-c3cab4d41b6b)
   * [当我们在谈论 DRL：从Q-learning到DQN](https://zhuanlan.zhihu.com/p/31922015)
+  * [Reinforcement Learning - A Simple Python Example and a Step Closer to AI with Assisted Q-Learning](https://amunategui.github.io/reinforcement-learning/)
