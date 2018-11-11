@@ -35,7 +35,8 @@ const sql_insert_row = (tbname, columns, row) => `INSERT INTO ${tbname} (${colum
 
 const has_table = (db, tbname) => execute_sql_first(db, sql_search_table(tbname));
 
-const delete_table = (db, tbname) = execute_sql_first(db, sql_delete_table(tbname));
+const create_table = (db,tbname,columns) => execute_sql_first(db, sql_create_table(tbname, columns));
+const delete_table = (db, tbname) => execute_sql_first(db, sql_delete_table(tbname));
 
 const insert_row = (db,tbname,columns,row) => execute_sql_first(db, sql_insert_row(tbname, columns, row));
 
