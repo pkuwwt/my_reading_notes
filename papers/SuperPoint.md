@@ -6,6 +6,8 @@
   * Add sample points by transformation
   * The loss function is the difference between the outputs of original and transformed image
   
+The algorithm is claimed to be better than LIFT, SIFT, and ORB.
+  
 
 ## Reference
 
