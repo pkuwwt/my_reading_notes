@@ -39,6 +39,8 @@ $$
 
 ### Policy Gradient
 
+  * [Policy Gradient in a Nutshell](https://www.sanyamkapoor.com/machine-learning/policy-gradients-nutshell/)
+
 #### REINFORCE algorithm
 REINFORCE algorithm is the RL method used in AlphaGO.
 
