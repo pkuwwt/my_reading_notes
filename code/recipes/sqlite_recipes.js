@@ -20,7 +20,7 @@ const column_to_spec = ({name,type,property}) => {
     if(!name) console.error('null name in column_spec');
     if(!type) console.error('null type in column_spec');
     var spec = `${name} ${type}`;
-    if(property) spec = spec + '' + property;
+    if(property) spec = spec + ' ' + property;
     return spec;
 };
 const columns_to_spec = columns => columns.map(column_to_spec).join(',');
