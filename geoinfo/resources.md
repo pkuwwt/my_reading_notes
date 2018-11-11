@@ -15,6 +15,7 @@
   * [ECharts Cities](https://github.com/echarts-maps/echarts-cities-js)
   * [GDAM](https://gadm.org/): maps for all countries
   * [OpenMapTiles](https://openmaptiles.org): open source maps for self-hosting
+  * [GeoJson Maps](https://geojson-maps.ash.ms/)
   
 
 ## Services
