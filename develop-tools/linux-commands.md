@@ -38,5 +38,6 @@ where `find . -regex` used to find all filenames in current dir ending with .cpp
 
   * list all variables: `sysctl -a`
   * list a specific variable: `sysctl vm.max_map_count`
+  * list with pattern `sysctl -a -r vm`
   * revise virtual machine max map size: `sudo sysctl -w vm.max_map_count=262144`
   
