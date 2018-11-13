@@ -32,3 +32,11 @@ where `find . -regex` used to find all filenames in current dir ending with .cpp
   * umount the temp dir: `umount /tmp/newvar`
   * revise `/etc/fstab`: `UUID=xxxx /var ext4 `
   
+## Resources
+
+### sysctl
+
+  * list all variables: `sysctl -a`
+  * list a specific variable: `sysctl vm.max_map_count`
+  * revise virtual machine max map size: `sudo sysctl -w vm.max_map_count=262144`
+  
