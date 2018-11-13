@@ -22,3 +22,13 @@
 find . -regex '.*\.\(cpp\|c\|h\)$' -exec wc -l {} \; | awk '{sum += $1}END{print sum}'
 ```
 where `find . -regex` used to find all filenames in current dir ending with .cpp/.c/.h, and use `wc -l` to count the LOC of each file, and then use awk to add the numbers in the first column of the output of `wc -l`.
+
+
+### Relocate /var to a different partition
+
+  * assume there is new disk device, find out the UUID by `sudo blkid /dev/sdc1`
+  * mount the partiton on a temp dir: `mount /dev/sdc1 /tmp/newvar`
+  * copy /var to the temp dir: `rsync -aqxP /var/* /tmp/newvar/`
+  * umount the temp dir: `umount /tmp/newvar`
+  * revise `/etc/fstab`: `UUID=xxxx /var ext4 `
+  
