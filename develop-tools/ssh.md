@@ -12,8 +12,12 @@
       * generate key: `ssh-keygen`
       * prepare key for server: `cp ~/.ssh/id_rsa /etc/ssh/ssh_host_rsa_key`
       * start server: `/usr/bin/sshd`
-  * operations
+  * client operations
     * login: `ssh username@server-host`
+    * copy local files to server: `scp local-files username@server-host:/host/path`
+    * copy local dirs to server: `scp -r local-dirs username@server-host:/host/path`
+    * copy remote files to local: `scp username@server-host:/host/path local-path`
+    * copy remote dirs to local: `scp -r username@server-host:/host/path local-path`
     * execute remote command: `ssh username@server-host 'echo'`
     * execute local script on remote server: `ssh username@server-host 'bash -s' < local_script.sh`
     * execute multiple commands on remote server:
