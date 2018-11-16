@@ -7,7 +7,7 @@
     * Ubuntu: `sudo apt-get install openssh`
     * Windows: best solution is [Git for Windows](https://gitforwindows.org/), it contains both client and server, and a terminal.
   * start server
-    * Linux: `service sshd start`
+    * Linux: `sudo service sshd start`
     * Git for Windows: 
       * generate key: `ssh-keygen`
       * prepare key for server: `cp ~/.ssh/id_rsa /etc/ssh/ssh_host_rsa_key`
