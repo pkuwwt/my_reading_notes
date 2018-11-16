@@ -33,3 +33,11 @@ pause
 ```
 
 where "Local Network" is your network interface name.
+
+
+## Control Panel
+
+  * open Control Panel: `control`
+  * open System Applet: `control sysdm.cpl`
+  * open Advanced Settings of System Applet to modify PATH: `control sysdm.cpl,,3`
+  
