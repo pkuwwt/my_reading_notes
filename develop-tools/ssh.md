@@ -44,3 +44,4 @@ Then you can use `myserver` instead of `username@server-host` in commands `ssh` 
 scp ~/.ssh/id_rsa.pub myserver:/tmp/
 ssh myserver 'cat /tmp/id_rsa.pub >>~/.ssh/authorized_keys
 ```
+  * Now, you are ready to use `myserver` without password. If you provide password for `ssh-keygen`, then you still need to input that password each time.
