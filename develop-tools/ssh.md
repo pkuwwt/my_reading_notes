@@ -25,8 +25,15 @@ EOF
 ```
   * login without password
     * generate key for client (don't provide any password): `ssh-keygen`
+    * add shortcut in `~/.ssh/config` as follows:
+```conf
+Host myserver
+    HostName server-host
+    User username
+```
     * copy public key to server `~/.ssh/authorized_keys`: 
 ```bash
-scp ~/.ssh/id_rsa.pub username@server-host:/tmp/
-ssh username@server-host 'cat /tmp/id_rsa.pub >>~/.ssh/authorized_keys
+scp ~/.ssh/id_rsa.pub myserver:/tmp/
+ssh myserver 'cat /tmp/id_rsa.pub >>~/.ssh/authorized_keys
 ```
+    * Now, you are ready to login with `ssh myserver`. And you can use `myserver` forever.
