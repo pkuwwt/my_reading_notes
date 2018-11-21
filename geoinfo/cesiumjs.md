@@ -18,7 +18,9 @@ The call stack of `ImageryProvider.prototype.requestImagery`:
   * imagery.imageryLayer: `ImageryLayer.prototype._requestImagery`
   * imageryLayer.imageryProvider: `ImageryProvider.prototype.requestImagery`
   
-So basically, `QuadtreeTile` will determine if current rendered tile need to be refined. There is a class `TileReplacementQueue` in `QuadtreeTile` used to maintain a list of cache.
+So basically, `QuadtreePrimitive` will determine if current rendered tile need to be refined. There is an instance of `TileReplacementQueue` in `QuadtreePrimitive` used to maintain a list of cache.
+
+`GlobeSurfaceTileProvider` uses the `TilingScheme` of the terrain provider, i.e. `GeographicTilingScheme` by default.
 
 ## Cesium Data Types
 
