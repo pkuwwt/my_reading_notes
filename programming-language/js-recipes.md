@@ -5,7 +5,7 @@
 
 ### prototype based inheritance
 
-```
+```javascript
 function Parent(options) {
     this.options = options;
 }
