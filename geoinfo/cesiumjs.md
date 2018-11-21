@@ -4,6 +4,10 @@
 
 ## Cesium Rendering Pipeline
 
+### How does the ImageryProvider work?
+
+#### ImageryProvider#requestImage
+
 ## Cesium Data Types
 
 ## References
