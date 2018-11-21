@@ -6,7 +6,17 @@
 
 ### How does the ImageryProvider work?
 
-#### ImageryProvider#requestImage
+The call stack of `ImageryProvider.prototype.requestImagery`:
+
+  * viewer.scene: `Scene.prototype.render`
+  * scene.globe: `Globe.prototype.endFrame`
+  * globe.surface: `QuadtreePrimitive.prototype.endFrame`
+  * surface.tileProvider: `GlobeSurfaceTileProvider.prototype.loadTile(frameState, tile)`
+  * `GlobeSurfaceTile.processStateMachine(tile,...)`
+  * QuadtreeTile.data.imagery: `TileImagery.prototype.processStateMachine(tile, frameState)`
+  * tileImagery.loadingImagery: `Imagery.prototype.processStateMachine(frameState,...)`
+  * imagery.imageryLayer: `ImageryLayer.prototype._requestImagery`
+  * imageryLayer.imageryProvider: `ImageryProvider.prototype.requestImagery`
 
 ## Cesium Data Types
 
