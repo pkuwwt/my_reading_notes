@@ -2,25 +2,25 @@
 # Basic French
 
 Bonsior!
-Good evening!
+- Good evening!
 
 Merci!
-Thank you!
+- Thank you!
 
 Merci beaucoup!
-Thank you very much!
+- Thank you very much!
 
 Tu es la bienvenue!
-You are welcome!
+- You are welcome!
 
 Bonne nuit!
-Good night!
+- Good night!
 
 De rien au revior
-You are welcome, good bye
+- You are welcome, good bye
 
-Je suis dèsolè
-I am sorry
+Je suis désolé
+- I am sorry
 
 De rien, à bientôt
-You are welcome, see you soon
+- You are welcome, see you soon
