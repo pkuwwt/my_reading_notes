@@ -17,6 +17,8 @@ The call stack of `ImageryProvider.prototype.requestImagery`:
   * tileImagery.loadingImagery: `Imagery.prototype.processStateMachine(frameState,...)`
   * imagery.imageryLayer: `ImageryLayer.prototype._requestImagery`
   * imageryLayer.imageryProvider: `ImageryProvider.prototype.requestImagery`
+  
+So basically, `QuadtreeTile` will determine if current rendered tile need to be refined. There is a class `TileReplacementQueue` in `QuadtreeTile` used to maintain a list of cache.
 
 ## Cesium Data Types
 
