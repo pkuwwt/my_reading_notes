@@ -24,3 +24,6 @@ Je suis désolé
 
 De rien, à bientôt
 - You are welcome, see you soon
+
+Bonjour, ça va?
+- Hello, how are you?
