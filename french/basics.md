@@ -27,3 +27,30 @@ De rien, à bientôt
 
 Bonjour, ça va?
 - Hello, how are you?
+
+Comment ça va
+- How are you doing
+
+
+
+Au revior et à demain!
+- Good bye and see you tomorrow
+
+D'accord
+- Okay
+
+Je suis D'acoord
+- I agree
+
+Oui, à plus tard
+- Yes, see you later
+
+Bonjour et bienvenue
+- Hello and welcome
+
+Salut ça va
+- Hi, how are you doing
+
+Merci et à bientôt
+- Thanks and see you soon
+
