@@ -36,6 +36,9 @@ Comment ça va
 Au revior et à demain!
 - Good bye and see you tomorrow
 
+Au revior et merci beaucoup
+- Good bye and thank you very much
+
 D'accord
 - Okay
 
@@ -53,4 +56,8 @@ Salut ça va
 
 Merci et à bientôt
 - Thanks and see you soon
+
+Bonsior, ça va bien, merci
+- Good evening, I am fine, thank you
+
 
