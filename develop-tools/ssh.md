@@ -60,7 +60,7 @@ This command will invoke a TTY on `serverB`. We can avoid that by `ssh -nNT -L`.
 
 ### Remote port forwarding
 
-A way to expose your own port on `localA` behind `serverB` to outside as `serverB:portB`:
+A way to expose your the port `portA` on your own machine `localA` behind `serverB` to outside as `serverB:portB`:
 ```
 ssh -R portB:localA:portA serverB
 ```
