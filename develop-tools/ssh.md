@@ -45,3 +45,28 @@ scp ~/.ssh/id_rsa.pub myserver:/tmp/
 ssh myserver 'cat /tmp/id_rsa.pub >>~/.ssh/authorized_keys
 ```
   * Now, you are ready to use `myserver` without password. If you provide password for `ssh-keygen`, then you still need to input that password each time.
+
+## SSH Tunnel
+
+### Local port forwarding
+
+A way to access serverC from localA through serverB:
+```
+ssh -L portA:serverC:portC serverB
+```
+User of `localA` executes this command map to `localA:portA` to `serverC:portC` through `serverB:22`, so we can access `localA:portA` now as if we are accessing `serverC:portC`.
+
+This command will invoke a TTY on `serverB`. We can avoid that by `ssh -nNT -L`.
+
+### Remote port forwarding
+
+A way to expose your own port on `localA` behind `serverB` to outside as `serverB:portB`:
+```
+ssh -R portB:localA:portA serverB
+```
+Now, we can access `serverB:portB` as if we are accessing `localA:portA`.
+
+Similary, we can avoid the invoking of tty on `serverB` by `ssh -nNT -R`.
+
+### Reference
+  * [SSH Tunnel - Local and Remote Port Forwarding Explained With Examples](https://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)
