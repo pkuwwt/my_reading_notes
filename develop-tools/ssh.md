@@ -54,7 +54,7 @@ A way to access serverC from localA through serverB:
 ```
 ssh -L portA:serverC:portC serverB
 ```
-User of `localA` executes this command map to `localA:portA` to `serverC:portC` through `serverB:22`, so we can access `localA:portA` now as if we are accessing `serverC:portC`.
+User of `localA` executes this command to map `localA:portA` to `serverC:portC` through `serverB:22`, so we can access `localA:portA` now as if we are accessing `serverC:portC`.
 
 This command will invoke a TTY on `serverB`. We can avoid that by `ssh -nNT -L`.
 
