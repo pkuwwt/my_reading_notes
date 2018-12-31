@@ -5,7 +5,7 @@
 
 ### JavaScript vs. EMACScript
 
-JavaScript is the general/unofficial name, while EMACScript is the offiial name, and usually called with a version: like ES6 (ES2015).
+JavaScript is the general/unofficial name, while EMACScript is the official name, and usually called with a version: like ES6 (ES2015).
 
 
 ### Hoisting
