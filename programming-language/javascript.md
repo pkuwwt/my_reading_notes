@@ -22,6 +22,10 @@ console.log(test);
 test = 1;
 ```
 
+#### Reference
+
+  * [What is Hoisting in JavaScript](https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-what-is-hoisting-in-javascript-a63c1b2267a1)
+
 ## References
 
   * [awesome javascript learning](https://github.com/micromata/awesome-javascript-learning)
