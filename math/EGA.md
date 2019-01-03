@@ -6,6 +6,7 @@
 ### Commutative Algebra
 
   * Ideals
+    * ideal, quotient ring; zero diviser, integral domain, nilpotent elements, units; prime ideals, maximum ideals
   * Modules
   * 
   
