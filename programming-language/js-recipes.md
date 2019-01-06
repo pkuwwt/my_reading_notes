@@ -35,7 +35,11 @@ In specific, a `new`ed object is created by `Object.create(Child.prototype)`, i.
 
 By default, `Pareht.prototype.constructor === Parent`, so we correct the inheritance by `Child.prototype.constructor = Child`.
 
-The `instanceof` operator is essentially check these `__proto__` and `prototype`.
+The `instanceof` operator is essentially check these `__proto__` and `prototype`. So, we can fool JavaScript by
+
+```javascript
+({__proto__: Child.prototype}) instanceof Child // true
+```
 
 
 
