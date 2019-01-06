@@ -54,9 +54,9 @@ f.constructor === F
 
 ## Iterator
 
-A iterable object is an object with `@@iterator` property, this property should be defining `[Symbol.iterator]` as an iterator. An iterator is a function that must return an object `{next}`, where `next` is a function must return an object `{done: Boolean, value: Any}`.
+A iterable object is an object with `@@iterator` property, this property is created by defining `[Symbol.iterator]` as an iterator. An iterator is a function that must return an object `{next}`, where `next` is a function must return an object `{done: Boolean, value: Any}`.
 
-So we can make an object `obj` iterable by defining `obj[Symbol.iterator]`, or make a constructor `F`'s instances iterable by defining `F.prototype[Symbol.iterator]`, or make a class iterable by defining its member function `[Symbol.iterator]`. We can also make a promised object iterable by defining `[Symbol.asyncIterator]`.
+So we can make an object `obj` iterable by defining `obj[Symbol.iterator]`, or make a constructor `F`'s instances iterable by defining `F.prototype[Symbol.iterator]`, or make a class iterable by defining its member function `[Symbol.iterator]`. We can also make a promised object iterable by defining a promised `[Symbol.asyncIterator]`.
 
 ### Reference
 
