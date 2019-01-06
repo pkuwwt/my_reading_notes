@@ -22,3 +22,23 @@ typeof 1 === 'number'          // true
 typeof true === 'boolean'      // true
 true instanceof Boolean        // false
 ```
+
+## new operator
+
+The following code snippets are equivalent:
+
+```javascript
+function Person (name) {
+  this.name = name;
+}
+var person = new Person('Martin');
+```
+
+```javascript
+function Person (name) {
+  This = Object.create(Object.prototype);
+  This.name = name;
+  return This;
+}
+var person = Person('Martin');
+```
