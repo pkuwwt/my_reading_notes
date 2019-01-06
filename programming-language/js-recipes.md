@@ -15,7 +15,7 @@ function Child(options) {
     Parent.call(this, options);
 }
 Child.prototype = Object.create(Parent.prototype);
-Child.constructor = Parent;
+Child.prototype.constructor = Child;
 
 var child = new Child();
 ```
@@ -29,6 +29,13 @@ class Dog extends Animal {
   }
 }
 ```
+
+Notice that, the `prototype` property of a function is an object used to build a protype-chain. 
+In specific, a `new`ed object is created by `Object.create(Child.prototype)`, i.e. the `this` or `child`, so that `child.__proto__` is equal to `Child.prototype`.
+
+By default, `Pareht.prototype.constructor === Parent`, so we correct the inheritance by `Child.prototype.constructor = Child`.
+
+The `instanceof` operator is essentially check these `__proto__` and `prototype`.
 
 
 
