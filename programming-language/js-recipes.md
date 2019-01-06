@@ -52,6 +52,16 @@ f = new F()
 f.constructor === F
 ```
 
+## Iterator
+
+A iterable object is an object with `@@iterator` property, this property should be defining `[Symbol.iterator]` as an iterator. An iterator is a function that must return an object `{next}`, where `next` is a function must return an object `{done: Boolean, value: Any}`.
+
+So we can make an object `obj` iterable by defining `obj[Symbol.iterator]`, or make a constructor `F`'s instances iterable by defining `F.prototype[Symbol.iterator]`, or make a class iterable by defining its member function `[Symbol.iterator]`. We can also make a promised object iterable by defining `[Symbol.asyncIterator]`.
+
+### Reference
+
+  * [Understanding the For...of Loop in JavaScript](https://blog.bitsrc.io/understanding-the-for-of-loop-in-javascript-8aded97d7ef8)
+
 ## RegExp
 
   * match all including newline: `[\s\S]`
