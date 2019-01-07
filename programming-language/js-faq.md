@@ -144,14 +144,14 @@ NO, calculations with fractional numbers are not guaranteed to be precise in Jav
 ## List the comparison operators supported by Javascript?
 Javascript supports below comparison operators
 
-  * > Greater than
-  * < Less than
-  * <= Less than or equal to
-  * >= Greater than or equal to
-  * == Equal to
-  * != Not Equal to
-  * === Equal to with datatype check
-  * !== Not equal to with datatype check
+  * `>` Greater than
+  * `<` Less than
+  * `<=` Less than or equal to
+  * `>=` Greater than or equal to
+  * `==` Equal to
+  * `!=` Not Equal to
+  * `===` Equal to with datatype check
+  * `!==` Not equal to with datatype check
 
 ## How do you declare variables in Javascript?
 In Javascript variable are declared using the var keyword.A variable must begin with A letter, $ or _.
