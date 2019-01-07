@@ -452,6 +452,7 @@ person.country= "India";
 The new property "country" has added to the object person.
 
 ## Explain JavaScript Accessors ?
+You can access an object's property by `obj['propertyName']` or `obj.propertyName`. The dot notation only works for property names that are valid identifiers.
 
 
 ## List few difference between primitive and non primitive JavaScript data types?
@@ -673,10 +674,13 @@ If you want to make online systems available offline and sync automatically once
 Content loading and changing it dynamically. Using Ajax in Javascript you can load content into the document if and when the user needs it, without reloading the entire page.
 Using the Principles of unobtrusive JavaScript(defensive Scripting), JavaScript can test for what is possible in your browser and react accordingly.
 
-## What is use of settimeout function in JavaScript?
+## What is use of setTimeout function in JavaScript?
    
 ## What is difference between local and global scope in JavaScript ?
    
 ## What are anonymous functions in JavaScript ?
    
 ## Please explain equality operators in JavaScript?
+
+## What the valid identifiers look like in JavaScript?
+A sequence of alphanumerical characters,  `_` and `$`, that cannot start with a number.
