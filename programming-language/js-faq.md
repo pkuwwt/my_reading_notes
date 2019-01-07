@@ -91,4 +91,76 @@ An arrow function is a consise and short way to write function expressions in Es
  greet();
  ```
  
- 
+## What are exports and imports?
+Imports and exports help us to write modular javascript code. Using Imports and exports we can split our code into multiple files. Imports allow taking only some specific variables or methods of a file. We can import methods or variables that are exported by a module. See the below example for more detail.
+
+```javascript
+ //index.js
+ import name,age from './person'; 
+
+ console.log(name);
+ console.log(age);
+```
+```javascript
+ //person.js
+ let name ='Sharad', occupation='developer', age =26;
+
+ export { name, age};
+ ```
+
+## What is difference between module.exports and export?
+The module is a plain JavaScript object with an exports property. Exports is a plain JavaScript variable that happens to be set to module.exports. At the end of your file, node.js will basically ‘return’ module.exports to the require function. A simplified way to view a JS file in Node could be this:
+
+```javascript
+var module = { exports: {} };
+var exports = module.exports;
+
+// your code
+return module.exports;
+```
+
+If you set a property on exports, like exports.a = 9;, that will set module.exports.a as well because objects are passed around as references in JavaScript, which means that if you set multiple variables to the same object, they are all the same object; so then exports and module.exports are the same objects.
+But if you set exports to something new, it will no longer be set to module.exports, so exports and module.exports are no longer the same objects.
+
+Source : https://stackoverflow.com/questions/16383795/difference-between-module-exports-and-exports-in-the-commonjs-module-system
+
+## How to import all exports of a file as an object.
+`import * as object name from ‘./file.js’` is used to import all exported members as an object. You can simply access the exported variables or methods using dot (.) operator of the object.
+
+Example:
+
+```javascript
+objectname.member1;
+objectname.member2;
+objectname.memberfunc();
+```
+
+## Explain “use strict” ?
+“use strict” is a javascript directive that is introduced in Es5. The purpose of using “use strict” directive is to enforce the code is executed in strict mode. In strict mode we can’t use a variable without declaring it. “use strict” is ignored by earlier versions of Javascript.
+
+## In Javascript are calculations with fractional numbers guaranteed to be precise?
+NO, calculations with fractional numbers are not guaranteed to be precise in Javascript
+
+## List the comparison operators supported by Javascript?
+Javascript supports below comparison operators
+
+  * > Greater than
+  * < Less than
+  * <= Less than or equal to
+  * >= Greater than or equal to
+  * == Equal to
+  * != Not Equal to
+  * === Equal to with datatype check
+  * !== Not equal to with datatype check
+
+## How do you declare variables in Javascript?
+In Javascript variable are declared using the var keyword.A variable must begin with A letter, $ or _.
+
+e.g.
+```javascript
+var myVar = ”Online Interview Questions”;
+```
+
+PS: All variables in Javascript are Case sensitive.
+
+Also, read [Advanced JavaScript Interview Questions](https://www.onlineinterviewquestions.com/advanced-javascript-interview-questions/)
