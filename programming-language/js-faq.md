@@ -775,3 +775,8 @@ User interfaces are asynchronous by nature, and spend most of their time waiting
 Node is asynchronous by default, meaning that the server works in much the same way, waiting in a loop for a network request, and accepting more incoming requests while the first one is being handled.
 This is important in JavaScript, because it is a very natural fit for user interface code, and very beneficial to performance on the server.
 
+
+## References
+
+  * [100+ advanced javascript interview questions](https://www.onlineinterviewquestions.com/advanced-javascript-interview-questions/)
+  * [10 Interview questions every javascript developer should know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
