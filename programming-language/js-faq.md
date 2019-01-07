@@ -236,8 +236,10 @@ In Javascript instanceof operator checks whether the object is an instance of a 
 
 Example Usage
 
+```javascript
 Square.prototype = new Square();
 console.log(sq instanceof Square); // true
+```
 
 ## What is Javascript BOM?
 BOM stands for “Browser Object Modal” that allows Javascript to ‘talk’ to the browser, no standards, modern browsers implement similar BOMS – window, screen, location, history, navigator, timing, cookies.
@@ -252,17 +254,21 @@ In Javascript there are 3 types of Popup Boxes are available, they are
 ## How can you create an array in Javascript?
 There are 3 different ways to create an array in Javascript. They are
 
-By array literal
-usage:
+### By array literal
+```javascript
  var myArray=[value1,value2...valueN];
-By creating instance of Array
-usage:
+ ```
+### By creating instance of Array
+```javascript
 var myArray=new Array();
-By using an Array constructor
-usage:
-var myArray=new Array('value1','value2',...,'valueN');
+```
 
-## What is the ‘Strict’ mode in JavaScript and how can it be enabled?
+### By using an Array constructor
+```javascript
+var myArray=new Array('value1','value2',...,'valueN');
+```
+
+## What is the 'Strict' mode in JavaScript and how can it be enabled?
 Strict mode is a way to introduce better error-checking into your code. When you use strict mode, you cannot, for example, use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible.
 
 You can enable strict mode by adding “use strict”; at the beginning of a file, a program, or a function. This kind of declaration is known as a directive prologue. The scope of a strict mode declaration depends on its context. If it is declared in a global context (outside the scope of a function), all the code in the program is in strict mode. If it is declared in a function, all the code in the function is in strict mode.
@@ -271,6 +277,7 @@ You can enable strict mode by adding “use strict”; at the beginning of a fil
 Calculating Fibonacci series in JavaScript
 Fibonacci numbers are a sequence of numbers where each value is the sum of the previous two, starting with 0 and 1. The first few values are 0, 1, 1, 2, 3, 5, 8, 13 ,…,
 
+```javascript
 function fib(n) {
 	var a=0, b=1;
 	for (var i=0; i < n; i++) {
@@ -280,9 +287,10 @@ function fib(n) {
 	}
 	return a;
 }
+```
 
 ## What is the difference between the substr() and substring() functions in JavaScript?
-Difference between the substr() and substring() functions in JavaScript.
+
 The substr() function has the form substr(startIndex,length). It returns the substring from startIndex and returns ‘length’ number of characters.
 
 var s = "hello";
@@ -475,7 +483,7 @@ Host objects: These are those objects which environment gives. It means they are
 Native Objects: these are built-in objects in JavaScript. They are also known as Global Objects because they will be available to you independent of ay environment if you working in JavaScript.
 
 ## What is difference between var x=1; and x=1;?
-   
+`var x = 1` will declare a variable only in current scope, while `x=1` will declare a variable in global scope.
 
 ## Explain spread operator in JavaScript?
 The spread operator expands an expression in places where multiple argument/variables/elements are needed to present. It represents with three dots (…).
