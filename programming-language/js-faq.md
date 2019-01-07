@@ -181,55 +181,60 @@ HTML DOM mouse events
   * mouseup
 
 ## How to get the last index of a string in Javascript?
-string.length-1 is used to get the last index of a string in Javascript
+`string.length-1` is used to get the last index of a string in Javascript
 
 Example Usage:-
 
+```javascript
 var myString="JavascriptQuestions";
 console.log(myString.length-1);
+```
 
 ## How to get the primitive value of a string in Javascript?
-In Javascript valueOf() method is used to get the primitive value of a string.
+In Javascript `valueOf()` method is used to get the primitive value of a string.
 
 Example Usage:
 
+```javascript
 var myVar= "Hi!"
 console.log(myVar.valueOf())
+```
 
 ## What are the primitive data types in JavaScript?
 A primitive is a basic data type that’s not built out of other data types. It can only represent one single value. All primitives are built-in data types by necessity, (the compiler has to know about them,) but not all built-in data types are primitives.
 
-In JavaScript there are 5 primitive data types are available they are undefined, null, boolean, string and number are available.Everything else in Javascript is an object.
+In JavaScript there are 5 primitive data types are available they are: `undefined`, `null`, `boolean`, `string` and `number` are available.Everything else in Javascript is an object.
 
 ## Explain Event bubbling and Event Capturing in JavaScript?
 Event Capture and Bubbling: In HTML DOM API there are two ways of event propagation and determines the order in which event will be received. The two ways are Event Bubbling and Event Capturing. The first method event bubbling directs the event to its intended target, and the second is called event capture in which the event goes down to the element.
 
-### Event Capture
-The capture procedure is rarely used but when it’s used it proves to be very helpful. This process is also called ‘trickling’. In this process, the event is captured first by the outermost element and then propagated to the innermost element. For example:
-
-<div>
-
-<ul>
-
-<li></li>
-
-</ul>
-
-</div>
-From the above example, suppose the click event did occur in the ‘li’ element, in that case capturing event it will be first handled ‘div’, then ‘ul’ and at last the target element will be hit that is ‘li’
 
 ### Event Bubbling
 Bubbling just works like the bubbles, the event gets handled by the innermost element and then propagated to the outer element.
 
+```html
 <div>
  <ul>
-
 <li></li>
-
 </ul>
-
 </div>
-From the above example, suppose the click event did occur in the ‘li’ element in bubbling model the event will be handled first by ‘li’ then by ‘ul’ and at last by ‘div’ element.
+```
+
+From the above example, suppose the click event did occur in the ‘li’ element in bubbling model the event will be handled first by ‘li’ then by `ul` and at last by `div` element.
+
+### Event Capture
+The capture procedure is rarely used but when it’s used it proves to be very helpful. This process is also called ‘trickling’. In this process, the event is captured first by the outermost element and then propagated to the innermost element. For example:
+
+```html
+<div>
+<ul>
+<li></li>
+</ul>
+</div>
+```
+
+From the above example, suppose the click event did occur in the `li` element, in that case capturing event it will be first handled `div`, then `ul` and at last the target element will be hit that is `li`
+
 
 ## What does the instanceof operator do?
 In Javascript instanceof operator checks whether the object is an instance of a class or not:
@@ -583,17 +588,40 @@ array.slice(start, end)
 ## Is JavaScript multi-threaded or single-threaded?
 JavaScript is single-threaded.
 
-## Explain JavaScript Debounce Function?
-   
+## Explain Throttle?
+
+## Explain Debounce?
+Debounce is a technique in JavaScript to execute a series of functions with minimal interval. A sample implementation from [UnderScore.js](https://davidwalsh.name/function-debounce) is:
+
+```javascript
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+```
 
 ## List some Design patterns in JavaScript?
 The design pattern is a general reusable solution to a commonly occurring problem in software design. Some of the design patterns are:
 
-Creational design pattern: These patterns dealt with the mechanism of object creation which optimize object creation with the basic approach.
-Structural design pattern: these patterns deal with different classes and objects to provide new functionality.
-Behavioral Patterns: These patterns are to improve communication between objects and to recognize patterns.
-Concurrency design patterns: These patterns handle with multi-thread programming paradigms.
-Architectural design patterns: These patterns used to deal with architectural designs.
+  * Creational design pattern: These patterns dealt with the mechanism of object creation which optimize object creation with the basic approach.
+  * Structural design pattern: these patterns deal with different classes and objects to provide new functionality.
+  * Behavioral Patterns: These patterns are to improve communication between objects and to recognize patterns.
+  * Concurrency design patterns: These patterns handle with multi-thread programming paradigms.
+  * Architectural design patterns: These patterns used to deal with architectural designs.
 
 ## What is console.time() and console.timeEnd()? What is its syntax, and why is it used?
    
