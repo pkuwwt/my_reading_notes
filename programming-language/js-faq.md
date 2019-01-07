@@ -125,7 +125,7 @@ But if you set exports to something new, it will no longer be set to module.expo
 Source : https://stackoverflow.com/questions/16383795/difference-between-module-exports-and-exports-in-the-commonjs-module-system
 
 ## How to import all exports of a file as an object.
-`import * as object name from ‘./file.js’` is used to import all exported members as an object. You can simply access the exported variables or methods using dot (.) operator of the object.
+`import * as objectname from ‘./file.js’` is used to import all exported members as an object. You can simply access the exported variables or methods using dot (.) operator of the object.
 
 Example:
 
@@ -203,7 +203,7 @@ console.log(myVar.valueOf())
 ## What are the primitive data types in JavaScript?
 A primitive is a basic data type that’s not built out of other data types. It can only represent one single value. All primitives are built-in data types by necessity, (the compiler has to know about them,) but not all built-in data types are primitives.
 
-In JavaScript there are 5 primitive data types are available they are: `undefined`, `null`, `boolean`, `string` and `number` are available.Everything else in Javascript is an object.
+In JavaScript there are 5 primitive data types are available they are: `undefined`, `null`, `boolean`, `string` and `number` are available. Everything else in Javascript is an object.
 
 ## Explain Event bubbling and Event Capturing in JavaScript?
 Event Capture and Bubbling: In HTML DOM API there are two ways of event propagation and determines the order in which event will be received. The two ways are Event Bubbling and Event Capturing. The first method event bubbling directs the event to its intended target, and the second is called event capture in which the event goes down to the element.
@@ -265,12 +265,12 @@ There are 3 different ways to create an array in Javascript. They are
  ```
 ### By creating instance of Array
 ```javascript
-var myArray=new Array();
+var myArray = new Array();
 ```
 
 ### By using an Array constructor
 ```javascript
-var myArray=new Array('value1','value2',...,'valueN');
+var myArray = new Array('value1','value2',...,'valueN');
 ```
 
 ## What is the 'Strict' mode in JavaScript and how can it be enabled?
