@@ -304,25 +304,27 @@ You can add a property to an object using object.property_name =value, delete ob
 
 Example:
 
-    let user = new Object();
-    // adding a property
-    user.name='Anil';
-    user.age  =25;
-    console.log(user);
-    delete user.age;
-    console.log(user);
- 0 Answer  Suggest an edit
-
+```javascript
+let user = new Object();
+// adding a property
+user.name='Anil';
+user.age  =25;
+console.log(user);
+delete user.age;
+console.log(user);
+```
  
 ## How to convert Javascript date to ISO standard?
 toISOString() method is used to convert javascript date to ISO standard. It converts JavaScript Date object into a string, using the ISO standard.
 
 Usage:
 
+```javascript
 var date = new Date();
 var n = date.toISOString();
 console.log(n);
 // YYYY-MM-DDTHH:mm:ss.sssZ
+```
 
 ## How to get inner Html of an element in JavaScript?
 InnerHTML property of HTML DOM is used to get inner Html of an element in JavaScript.
@@ -330,50 +332,59 @@ InnerHTML property of HTML DOM is used to get inner Html of an element in JavaSc
 Example Usage:
 
 This is inner Element
-<script type="text/javascript">
-	var  inner= document.getElementById("inner").innerHTML ;
-	console.log(inner); // This is inner Element
-	document.getElementById("inner").innerHTML = "Html changed!";
-	var  inner= document.getElementById("inner").innerHTML ;
-	console.log(inner); // Html changed!
-</script>
+```javascript
+var  inner= document.getElementById("inner").innerHTML ;
+console.log(inner); // This is inner Element
+document.getElementById("inner").innerHTML = "Html changed!";
+var  inner= document.getElementById("inner").innerHTML ;
+console.log(inner); // Html changed!
+```
 
 ## How to clone an object in Javascript?
 Object.assign() method is used for cloning an object in Javascript.Here is sample usage
 
-	var x = {myProp: "value"};
-	var y = Object.assign({}, x); 
+```javascript
+var x = {myProp: "value"};
+var y = Object.assign({}, x); 
+```
 
 ## List different ways of empty an array in Javascript?
 In Javascript, there are many ways to empty an array in Javascript, below we have listed 4 major
 
-By assigning an empty array.
+### By assigning an empty array.
 
+```javascript
 var arr1 =[1,4,5,6];
 arr1=[];
-By assigning array length to 0.
+```
 
+### By assigning array length to 0.
+
+```javascript
 var arr2 =[1,4,5,6];
 arr2.length=0;
-By poping the elements of the array.
+```
 
+### By poping the elements of the array.
+
+```javascript
 var arr2 =[1,4,5,6];
 while(arr.length > 0) {
     arr.pop();
 }
-By using .splice() .
+```
 
+### By using .splice() .
+
+```javascript
 var arr =[1,4,5,6];
 arr.splice(0,arr.length)
+```
 
 ## How to get an element by class in JavaScript ?
 document.getElementsByClassName() method is used in Javascript to get an element with a class name.
 
-getElementsByClassName()
-Method Name	getElementsByClassName
-Syntax	document.getElementsByClassName('className')
-Parameter	String (name of class)
-Output	Array of HTMLCollection that have inputted className
+The syntax is `document.getElementsByClassName('className')`, and the output is an array of `HTMLCollection` that have class `className`.
 
 ## Explain Typecasting in Javascript?
 In Programming whenever we need to convert a variable from one data type to another Typecasting is used. In Javascript, we can do this via library functions. There are basically 3 typecasts are available in Javascript Programming, they are:
@@ -427,18 +438,23 @@ Below is the list of few most Popular Javascript Unit Testing Frameworks:
 ## How to add a new property in existing function JavaScript?
 It is easy to add a new property in existing function by just giving value to the existing function it. For example, let we have an existing object person, to give new property check the below code:
 
-person.country= “India”;
-
-The new property “country” has added to the object person.
+```javascript
+person.country= "India";
+```
+The new property "country" has added to the object person.
 
 ## Explain JavaScript Accessors ?
-JavaScript Accessors
+
 
 ## List few difference between primitive and non primitive JavaScript data types?
 The primitive data types are numbers, strings, Boolean, undefined, null and anything other than these data types are known as non-primitive such as objects and functions.
+
 Primitive data types are immutable while non-primitives are mutable.
+
 Primitives are known immutable as they can't be changed once they created but non-primitive are changeable, means once an object is created, it can be changed.
+
 Primitives data types are compared with their values, it means two values are strictly equal if they have the same data type and holds the same value.
+
 Non-primitives are not compared with values. For example, if two objects have the same properties and values, they are strictly not equal.
 
 ## Explain higher-order functions in JavaScript?
@@ -481,19 +497,26 @@ There are many ways to remove duplicates from JavaScript array. These are descri
 ### By using Set
 It is the simplest approach to remove duplicates. Set is an inbuilt object to store unique values in an array. Here's how we use set:
 
-    function uniquearray(array) { 
-       let unique_array= Array.from(set(array)) 
-       return unique_array;}
+```javascript
+function uniquearray(array) { 
+   let unique_array= Array.from(set(array)) 
+   return unique_array;
+}
+```
 As in the above code, you created a set of an array which automatically eliminates the duplicate values.
 
 ### By using Filter
 Another approach to remove duplicates from an array is applying filter on an array. To call filter method, it requires three arguments: array, current element, index of current element. Here’s how we use filter:
 
+```javascript
 function unque_array (arr){
  let unique_array = arr.filter(function(elem, index, self) {
- return index == self.indexOf(elem); } 
-return unique_array }
- console.log(unique_array(array_with_duplicates));
+     return index == self.indexOf(elem); 
+  }); 
+  return unique_array
+}
+console.log(unique_array(array_with_duplicates));
+```
 ### By using for loop
 In this, we can use for loop to remove duplicates. In this we make an empty array in which those elements will be added from the duplicate array which are not present in this before. Thus, finally we will get an array which has unique elements. Code to implement this:
 ```javascript
@@ -532,9 +555,9 @@ A promise is an object in JavaScript which is used to produce a value that may g
 
 A promise can be of three states:
 
-Fulfilled: The operation is completed and the promise has a specific value.
-Rejected: The operation is failed and promise has a reason which shows why the operation failed.
-Pending: Th operation is not fulfilled or rejected, means it has not completed yet.
+  * Fulfilled: The operation is completed and the promise has a specific value.
+  * Rejected: The operation is failed and promise has a reason which shows why the operation failed.
+  * Pending: Th operation is not fulfilled or rejected, means it has not completed yet.
 
 ## What is difference between Array.splice() and Array.slice() method in JavaScript?
 The array.slice() removes items from the array and then return those removed items as an array whereas array.slice() method is selected items from an array and then those elements as a new array object.
@@ -542,7 +565,11 @@ The splice() method affects the original array whereas slice() method doesn’t 
 Splice() method takes n number of arguments whereas slice() can take only two arguments.
 Syntax of splice(): array.splice(index, howmany, item1, ....., itemX)
 
-Syntax of slice(): array.slice(start, end)
+Syntax of slice(): 
+
+```javascript
+array.slice(start, end)
+```
 
 ## Is JavaScript multi-threaded or single-threaded?
 JavaScript is single-threaded.
