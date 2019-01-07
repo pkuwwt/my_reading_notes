@@ -741,3 +741,37 @@ Anonymous functions are functions without a name, and they are usually used as a
 
 ## What the valid identifiers look like in JavaScript?
 A sequence of alphanumerical characters,  `_` and `$`, that cannot start with a number.
+
+## Name the most important programming paradigms in JavaScript.
+
+  * Prototypical object oriented programming
+  * Functional programming
+  
+## What is functioanl programming?
+Functional programming produces programs by composing mathematical functions and avoids shared state & mutable data. 
+
+Lisp (specified in 1958) was among the first languages to support functional programming, and was heavily inspired by lambda calculus. Lisp and many Lisp family languages are still in common use today.
+
+Functional programming is an essential concept in JavaScript (one of the two pillars of JavaScript). Several common functional utilities were added to JavaScript in ES5.
+
+There are some important aspects of functional programming:
+
+  * Pure functions, avoid side effects
+  * Immutable data
+  * Programming style: composition of simple functions
+  * Important functional programming languages: Lisp, ML, Haskell, Erlang, Clojure, Elm, F Sharp, OCaml
+  * Features of functional programming: first-class functions, higher order functions, functions as arguments/values
+  
+## What is the difference between classical inheritance and prototypal inheritance?
+ 
+  * Class Inheritance: instances inherit from classes (like a blueprint — a description of the class), and create sub-class relationships: hierarchical class taxonomies. Instances are typically instantiated via constructor functions with the `new` keyword. Class inheritance may or may not use the `class` keyword from ES6.
+  * Prototypal Inheritance: instances inherit directly from other objects. Instances are typically instantiated via factory functions or `Object.create()`. Instances may be composed from many different objects, allowing for easy selective inheritance.
+
+
+## What is asynchronous programming, and why is it important in JavaScript?
+Synchronous programming means that, barring conditionals and function calls, code is executed sequentially from top-to-bottom, blocking on long-running tasks such as network requests and disk I/O.
+Asynchronous programming means that the engine runs in an event loop. When a blocking operation is needed, the request is started, and the code keeps running without blocking for the result. When the response is ready, an interrupt is fired, which causes an event handler to be run, where the control flow continues. In this way, a single program thread can handle many concurrent operations.
+User interfaces are asynchronous by nature, and spend most of their time waiting for user input to interrupt the event loop and trigger event handlers.
+Node is asynchronous by default, meaning that the server works in much the same way, waiting in a loop for a network request, and accepting more incoming requests while the first one is being handled.
+This is important in JavaScript, because it is a very natural fit for user interface code, and very beneficial to performance on the server.
+
