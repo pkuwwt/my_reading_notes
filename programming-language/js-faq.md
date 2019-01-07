@@ -84,7 +84,7 @@ In modern javascript let & const are different ways of creating variables.Earlie
   * let: let is used to create a mutable variable. Mutable variables are normal variables like var that can be changed any number of time.
   
  ## Explain Arrow functions?
-An arrow function is a consise and short way to write function expressions in Es6 or above.A rrow functions cannot be used as constructors and also does not supports this, arguments, super, or new.target keywords. It is best suited for non-method functions. In general an arrow function looks like `const function_name = ()=>{}`
+An arrow function is a consise and short way to write function expressions in Es6 or above.A rrow functions cannot be used as constructors and also does not supports this, arguments, super, or new keywords. It is best suited for non-method functions. In general an arrow function looks like `const function_name = ()=>{}`
 
 ```javascript
  const greet=()=>{console.log('hello');}
@@ -108,7 +108,7 @@ Imports and exports help us to write modular javascript code. Using Imports and 
  export { name, age};
  ```
 
-## What is difference between module.exports and export?
+## What is difference between module.exports and exports?
 The module is a plain JavaScript object with an exports property. Exports is a plain JavaScript variable that happens to be set to module.exports. At the end of your file, node.js will basically ‘return’ module.exports to the require function. A simplified way to view a JS file in Node could be this:
 
 ```javascript
@@ -274,7 +274,7 @@ var myArray = Array('value1' ,'value2', ..., 'valueN');
 ```
 
 ## What is the 'strict' mode in JavaScript and how can it be enabled?
-Strict mode is a way to introduce better error-checking into your code. When you use strict mode, you cannot, for example, use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible.
+Strict mode is a way to introduce better error-checking into your code. When you use strict mode, you cannot, for example, use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible. And `this` is `undefind` in global scope and in function without owner or without biniding any object.
 
 You can enable strict mode by adding `"use strict";` at the beginning of a file, a program, or a function. This kind of declaration is known as a directive prologue. The scope of a strict mode declaration depends on its context. If it is declared in a global context (outside the scope of a function), all the code in the program is in strict mode. If it is declared in a function, all the code in the function is in strict mode.
 
@@ -317,7 +317,7 @@ There are two types of Inherientence in OOPS Classic and Prototypical Inheritanc
 
 ## What is output of undefined * 2 in Javascript?
 
-nan is output of undefined * 2.
+NaN is output of undefined * 2.
 
 ## How to add/remove properties to object dynamically in Javascript?
 
@@ -470,7 +470,7 @@ Below is the list of few most Popular Javascript Unit Testing Frameworks:
 It is easy to add a new property in existing function by just giving value to the existing function it. For example, let we have an existing object person, to give new property check the below code:
 
 ```javascript
-person.country= "India";
+person.country = "India";
 ```
 The new property "country" has added to the object person.
 
@@ -490,7 +490,7 @@ Primitives data types are compared with their values, it means two values are st
 Non-primitives are not compared with values. For example, if two objects have the same properties and values, they are strictly not equal.
 
 ## Explain higher-order functions in JavaScript?
-Higher order function is the best feature of functional programming available in JavaScript. It is the function which takes a function as an argument and returns a function as a result. Some of the inbuilt higher-order functions are mapping, filtering, reduction, zipping, etc.
+Higher order function is the best feature of functional programming available in JavaScript. It is the function which takes a function as an argument and returns a function as a result. Some of the builtin higher-order functions are mapping, filtering, reduction, zipping, etc.
 
 ## Explain few difference between null, undefined or undeclared JavaScript variable?
 Null is a value that can be assigned to a variable or an object.
@@ -531,7 +531,7 @@ It is the simplest approach to remove duplicates. Set is an inbuilt object to st
 
 ```javascript
 function uniquearray(array) { 
-   let unique_array= Array.from(set(array)) 
+   let unique_array= Array.from(new Set(array)) 
    return unique_array;
 }
 ```
@@ -647,7 +647,11 @@ The design pattern is a general reusable solution to a commonly occurring proble
   * Concurrency design patterns: These patterns handle with multi-thread programming paradigms.
   * Architectural design patterns: These patterns used to deal with architectural designs.
 
-## What is console.time() and console.timeEnd()? What is its syntax, and why is it used?
+## What is console.time() and console.timeEnd()?
+
+`console.time('timerName')` is used to start a timer named as 'timerName'.
+
+`console.timeEnd('timerName')` is used to end the named timer, and print the elapsed time.
    
 
 ## What are different types of Scope Chain available in JavaScript?
@@ -682,9 +686,6 @@ Using location.replace: Another approach to redirect page. In this, it is not po
 window.location.replace(" https://www.onlineinterviewquestions.com/;");
 ```
 
-## Is it possible to do 301 redirects in Javascript ?
-JavaScript entirely runs on the client machine. 301 is response code that is sent by the server as a response. So it is not possible to do 301 Redirects In JavaScript.
-
 ## Write a program to reverse a string in pure JavaScript?
 There are many ways to reverse a string in JavaScript. These are:
 
@@ -703,10 +704,7 @@ First split the string to an array, then reverse an array and after that join th
 Using a loop: First, count a number of characters in a string, then apply a decrementing loop on an original string which starts from the last character and prints each character until count becomes zero.
 
 
-
 ## List few advantages of using JavaScript?
-Few advantage of Javascript
-
 Javascript is executed on user's computer, the meaning is that whatever you do in Javascript will not add any processing strain on the server. and that's why it is called as the client-side programming language. And this feature makes your sites responsive for the end user and less expensive for you in terms of server traffic.
 With the help of Javascript, you can create highly responsive interfaces which will improve the user experience and provide dynamic functionality, without waiting for the server to show another page.
 If you want to make online systems available offline and sync automatically once the computer goes online, then Javascript is the best technology you can use. you can do this using the right browser add-ons (Such as Google or Yahoo Browser Plus).
@@ -714,12 +712,32 @@ Content loading and changing it dynamically. Using Ajax in Javascript you can lo
 Using the Principles of unobtrusive JavaScript(defensive Scripting), JavaScript can test for what is possible in your browser and react accordingly.
 
 ## What is use of setTimeout function in JavaScript?
+
+`setTimeout` is used to execute a function after a peirod of time. Its syntax is
+
+```javascript
+var timeout = setTimeout(() => {
+    console.log('execute 3 seconds later');
+}, 3000);
+```
    
 ## What is difference between local and global scope in JavaScript ?
+Global scope is the scope outside any function definition.
+
+Local scope is the scope in the function.
+
+In ES6, there is block scope, i.e. the scope in the curly brackets.
+
    
-## What are anonymous functions in JavaScript ?
+## What are anonymous functions in JavaScript?
+
+Anonymous functions are functions without a name, and they are usually used as arguments or values assigned to variables.
    
 ## Please explain equality operators in JavaScript?
+
+`==` and `!=` will not check the data type, and will do the conversios before comparison.
+
+`===` and `!==` will check the data type, and do the comparison exactly.
 
 ## What the valid identifiers look like in JavaScript?
 A sequence of alphanumerical characters,  `_` and `$`, that cannot start with a number.
