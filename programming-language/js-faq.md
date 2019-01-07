@@ -261,25 +261,25 @@ There are 3 different ways to create an array in Javascript. They are
 
 ### By array literal
 ```javascript
- var myArray=[value1,value2...valueN];
+ var myArray =[value1, value2, ..., valueN];
  ```
 ### By creating instance of Array
 ```javascript
-var myArray = new Array();
+var myArray = new Array(value1, value2, ..., valueN);
 ```
 
 ### By using an Array constructor
 ```javascript
-var myArray = new Array('value1','value2',...,'valueN');
+var myArray = Array('value1' ,'value2', ..., 'valueN');
 ```
 
-## What is the 'Strict' mode in JavaScript and how can it be enabled?
+## What is the 'strict' mode in JavaScript and how can it be enabled?
 Strict mode is a way to introduce better error-checking into your code. When you use strict mode, you cannot, for example, use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible.
 
-You can enable strict mode by adding “use strict”; at the beginning of a file, a program, or a function. This kind of declaration is known as a directive prologue. The scope of a strict mode declaration depends on its context. If it is declared in a global context (outside the scope of a function), all the code in the program is in strict mode. If it is declared in a function, all the code in the function is in strict mode.
+You can enable strict mode by adding `"use strict";` at the beginning of a file, a program, or a function. This kind of declaration is known as a directive prologue. The scope of a strict mode declaration depends on its context. If it is declared in a global context (outside the scope of a function), all the code in the program is in strict mode. If it is declared in a function, all the code in the function is in strict mode.
 
 ## How to calculate Fibonacci numbers in JavaScript?
-Calculating Fibonacci series in JavaScript
+
 Fibonacci numbers are a sequence of numbers where each value is the sum of the previous two, starting with 0 and 1. The first few values are 0, 1, 1, 2, 3, 5, 8, 13 ,…,
 
 ```javascript
@@ -298,22 +298,30 @@ function fib(n) {
 
 The substr() function has the form substr(startIndex,length). It returns the substring from startIndex and returns ‘length’ number of characters.
 
+```javascript
 var s = "hello";
 ( s.substr(1,4) == "ello" ) // true
+```
+
 The substring() function has the form substring(startIndex,endIndex). It returns the substring from startIndex up to endIndex – 1.
 
+```javascript
 var s = "hello";
 ( s.substring(1,4) == "ell" ) // true
+```
 
 ## What are different types of Inheritence? Which Inheritance is followed in Javascript.
+
 There are two types of Inherientence in OOPS Classic and Prototypical Inheritance. Javascript follows Prototypical Inheritance.
 
 
 ## What is output of undefined * 2 in Javascript?
+
 nan is output of undefined * 2.
 
 ## How to add/remove properties to object dynamically in Javascript?
-You can add a property to an object using object.property_name =value, delete object.property_name is used to delete a property.
+
+You can add a property to an object using `object.property_name = value`, `delete object.property_name` is used to delete a property.
 
 Example:
 
@@ -367,21 +375,21 @@ In Javascript, there are many ways to empty an array in Javascript, below we hav
 ### By assigning an empty array.
 
 ```javascript
-var arr1 =[1,4,5,6];
-arr1=[];
+var arr1 = [1,4,5,6];
+arr1 = [];
 ```
 
 ### By assigning array length to 0.
 
 ```javascript
-var arr2 =[1,4,5,6];
-arr2.length=0;
+var arr2 = [1,4,5,6];
+arr2.length = 0;
 ```
 
 ### By poping the elements of the array.
 
 ```javascript
-var arr2 =[1,4,5,6];
+var arr2 = [1,4,5,6];
 while(arr.length > 0) {
     arr.pop();
 }
@@ -390,8 +398,8 @@ while(arr.length > 0) {
 ### By using .splice() .
 
 ```javascript
-var arr =[1,4,5,6];
-arr.splice(0,arr.length)
+var arr = [1,4,5,6];
+arr.splice(0, arr.length)
 ```
 
 ## How to get an element by class in JavaScript ?
@@ -405,15 +413,24 @@ In Programming whenever we need to convert a variable from one data type to anot
   * Boolean(value): Casts the inputted value to a Boolean
   * Number(value): Casts the inputted value to an Integer or Floating point Number.
   * String(value) : Casts the inputted value value a string
+  
+## What difference between `String()` and `new String()`?
+
+`String()` return a primitive string, while `new String()` return a String object.
 
 ## How to encode and decode a URL in JavaScript?
-encodeURI() function is used to encode an URL in Javascript.It takes a url string as parameter and return encoded string. Note: encodeURI() did not encode characters like / ? : @ & = + $ #, if you have to encode these characters too please use encodeURIComponent(). Usage:
+encodeURI() function is used to encode an URL in Javascript, i.e. encoding special characters (including space and Unicode) to ASCII. It takes a url string as parameter and return encoded string. 
+
+Note: encodeURI() did not encode characters like `/?:@&=+$#`, if you have to encode these characters too please use encodeURIComponent(). Usage:
 
 ```javascript
 var uri = "my profile.php?name=sammer&occupation=pāntiNG";
 var encoded_uri = encodeURI(uri);
+```
+
 decodeURI() function is used to decode an URL in Javascript.It takes a encoded url string as parameter and return decoded string. Usage:
 
+```javascript
 var uri = "my profile.php?name=sammer&occupation=pāntiNG";
 var encoded_uri = encodeURI(uri);
 decodeURI(encoded_uri);
@@ -429,10 +446,11 @@ document.title="My New Title";
 ```
 
 ## What is difference between deep and shallow object coping in JavaScript?
-Some differences are:
 
 Deep copy means copies all values or properties recursively in the new object whereas shallow copy copies only the reference.
+
 In a deep copy, changes in the new object don't show in original object whereas, in shallow copy, changes in new objects will reflect in the original object.
+
 In a deep copy, original objects do not share the same properties with new object whereas, in shallow copy, they do.
 
 ## List some Unit Testing Frameworks JavaScript
@@ -484,15 +502,15 @@ Undeclared means the variable has declared without any datatype.
 Null, Undefined are primitive data types whereas Undeclared is not a primitive data type.
 
 ## How host objects are different from native objects in JavaScript?
-Host objects: These are those objects which environment gives. It means they are different for different environments. For example, browsers include objects such as windows but Node.js environments give objects such as Node List.
+  * Host objects: These are those objects which environment gives. It means they are different for different environments. For example, browsers include objects such as `window`, but Node.js environments give objects such as `Buffer`.
 
-Native Objects: these are built-in objects in JavaScript. They are also known as Global Objects because they will be available to you independent of ay environment if you working in JavaScript.
+  * Native Objects: these are built-in objects in JavaScript. They are also known as Global Objects because they will be available to you independent of ay environment if you working in JavaScript.
 
 ## What is difference between var x=1; and x=1;?
 `var x = 1` will declare a variable only in current scope, while `x=1` will declare a variable in global scope.
 
 ## Explain spread operator in JavaScript?
-The spread operator expands an expression in places where multiple argument/variables/elements are needed to present. It represents with three dots (…).
+The spread operator expands an expression in places where multiple argument/variables/elements are needed to present. It represents with three dots `...`.
 
 For example:
 
@@ -545,8 +563,6 @@ return Object.keys(unique);}   // Ron, Pal, Fred, Rongo
 Dups_array(names);
 ```
 
-These are the main three methods used in JavaScript to get a unique array.
-
 ## How to call a function in every x seconds in JavaScript?
 In JavaScript, we use the function setInterval() to call any function in every x seconds.
 
@@ -571,13 +587,21 @@ A promise can be of three states:
 
   * Fulfilled: The operation is completed and the promise has a specific value.
   * Rejected: The operation is failed and promise has a reason which shows why the operation failed.
-  * Pending: Th operation is not fulfilled or rejected, means it has not completed yet.
+  * Pending: The operation is not fulfilled or rejected, means it has not completed yet.
 
 ## What is difference between Array.splice() and Array.slice() method in JavaScript?
+
 The array.slice() removes items from the array and then return those removed items as an array whereas array.slice() method is selected items from an array and then those elements as a new array object.
+
 The splice() method affects the original array whereas slice() method doesn’t affect the original array.
+
 Splice() method takes n number of arguments whereas slice() can take only two arguments.
-Syntax of splice(): array.splice(index, howmany, item1, ....., itemX)
+
+Syntax of splice():
+
+```javascript
+array.splice(index, howmany, item1, ....., itemX)
+```
 
 Syntax of slice(): 
 
@@ -635,7 +659,7 @@ The scope chain in JavaScript is basically used to resolve the values of the var
 We can use array.indexOf method to check a value exists or not. See below example to remove duplicate values.
 
 ```javascript
-let duplicates = ['delhi','kanpur','kanpur','goa','delhi','new york'];
+let duplicates = ['delhi', 'kanpur', 'kanpur', 'goa', 'delhi','new york'];
 function removeDuplicatesValues(arr){
     let unique_array = [];
     for(let i = 0;i < arr.length; i++){
@@ -670,7 +694,7 @@ Using in-built functions: the inbuilt function reverse() reverses the string dir
 str="jQuery";
 str = str.split(""); //convert 'jQuery' to array
 str = str.reverse(); //reverse 'jQuery' order 
-str = str.join(""); //then combines  the reverse order values.
+str = str.join("");  //then combines  the reverse order values.
 alert(str);
 ```
 
@@ -678,20 +702,7 @@ First split the string to an array, then reverse an array and after that join th
 
 Using a loop: First, count a number of characters in a string, then apply a decrementing loop on an original string which starts from the last character and prints each character until count becomes zero.
 
- 
-## List few Difference between JAVA and JavaScript?
-   
-## Explain MUL function in Javascript?
-MUL means simple multiplication of numbers. It is a techique in which you pass a one value as an argument in a function and that function returns another function to which you pass the second value and the process go on. For example: x*y*z can be representing as:
 
-```javascript
-function mul (x) {  
-return function (y) { // anonymous function    
-return function (z) { // anonymous function      
-return x * y * z;    };
-  };
-}
-```
 
 ## List few advantages of using JavaScript?
 Few advantage of Javascript
