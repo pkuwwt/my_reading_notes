@@ -865,6 +865,29 @@ The printed results are
 ```
 
 `setTimeout(func, 0)` will be a little delayed. It will first sent the function to the event loop and execute it the next tick.
+
+## Considering the following code, what is the output when you click button 'Button 4'? How to reimplement it to get expected results?
+```javascript
+for (var i = 0; i < 5; i++) {
+  var btn = document.createElement('button');
+  btn.appendChild(document.createTextNode('Button ' + i));
+  btn.addEventListener('click', function(){ console.log(i); });
+  document.body.appendChild(btn);
+}
+```
+
+The result is `5`, because `var i` is a variable in the function scope other than block scope.
+
+Just change `var i` to `let i`, or wrap the callback in another function
+```javascript
+for (var i = 0; i < 5; i++) {
+  var btn = document.createElement('button');
+  btn.appendChild(document.createTextNode('Button ' + i));
+  btn.addEventListener('click', (function (i) { return function(){ console.log(i); } })(i));
+  document.body.appendChild(btn);
+}
+```
+
 ## References
 
   * [100+ advanced javascript interview questions](https://www.onlineinterviewquestions.com/advanced-javascript-interview-questions/)
