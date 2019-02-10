@@ -5,6 +5,10 @@
 
   * Login: `mysql -h 127.0.0.1 -uroot -p`
   * Show Databases: `SHOW Databases;`
+  * Show Current Database: `SELECT Database() FROM DUAL;`
+  * Change Current Database: `USE database_name`;
+  * Show Tables: `SHOW Tables;`
+  * Show Views: `SHOW FULL TABLES [IN database_name] WHERE TABLE_TYPE LIKE 'VIEW';
 
 ## Backup MySQL by `mysqldump`
 
