@@ -1,6 +1,11 @@
 
 # MySQL
 
+## Basic Usages
+
+  * Login: `mysql -h 127.0.0.1 -uroot -p`
+  * Show Databases: `SHOW Databases;`
+
 ## Backup MySQL by `mysqldump`
 
 We can use following script `backup_mysql.sh` to backup the remote MySQL database:
@@ -15,3 +20,12 @@ And then use `crontab` to execute it daily:
 ```crontab
 0 0 * * * /your/path/to/backup_mysql.sh
 ```
+
+## Usage in Docker
+
+  * Install image: `docker pull mysql`
+  * Start Container: `docker run --name mysql-test -e MYSQL_ROOT_PASSWORD=mysql-test -p 3309:3306 -d mysql:latest --default-authentication-plugin=mysql_native_password`
+  * Stop Container: `docker stop mysql-test`
+  * Remove Container: `docker rm mysql-test`
+  * Connect MySQL: `mysql -h 127.0.0.1 -P 3309 -uroot -pmysql-test`
+  
