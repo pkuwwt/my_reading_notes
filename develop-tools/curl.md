@@ -62,6 +62,13 @@ curl -F 'files[]=@/path/to/fileX' -F 'files[]=@/path/to/fileY' ... http://localh
 
 The file contents are stored in `request.files`.
 
+
+#### Show response for POST
+
+```bash
+curl -H "Accept application/json;*/*" -X POST http://localhost/upload
+```
+
 ### DELETE
 
 ```bash
