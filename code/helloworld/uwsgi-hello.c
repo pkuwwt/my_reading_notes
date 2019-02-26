@@ -6,7 +6,7 @@
 // Run server:
 //    uwsgi --dlopen ./uwsgi-hello.so --plugin symcall --symcall hello_uwsgi --http-socket :9090 --http-socket-modifier1 18
 // Test client:
-//    curl -H "Accept */*" http://127.0.0.1:9090/
+//    curl -i -H "Accept */*" http://127.0.0.1:9090/
 //
 
 #include "uwsgi.h"
