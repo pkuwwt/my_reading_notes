@@ -1,5 +1,6 @@
 //
 // Compile:
+//    sudo apt install uuid-dev libcap-dev
 //    uwsgi --dot-h >uwsgi.h
 //    gcc -fPIC -shared -o uwsgi-hello.so `uwsgi --cflags` uwsgi-hello.c
 // Run server:
