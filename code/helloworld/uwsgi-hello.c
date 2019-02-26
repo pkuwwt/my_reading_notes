@@ -1,3 +1,4 @@
+// From: https://uwsgi-docs.readthedocs.io/en/latest/Symcall.html
 //
 // Compile:
 //    sudo apt install uuid-dev libcap-dev
