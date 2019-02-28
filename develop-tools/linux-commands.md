@@ -41,3 +41,7 @@ where `find . -regex` used to find all filenames in current dir ending with .cpp
   * list with pattern `sysctl -a -r vm`
   * revise virtual machine max map size: `sudo sysctl -w vm.max_map_count=262144`
   
+## Compression
+
+  * Find files modified in 30 minutes and save it to a tarball: `find dir -type f -cmin -30 -print0 | tar czvf out.tar.gz --null -T -`
+  
