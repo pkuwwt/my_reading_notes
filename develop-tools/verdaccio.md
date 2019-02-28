@@ -15,7 +15,7 @@ npm install verdaccio
 ```
 
   * Start server: `node_modules/.bin/verdaccio`
-  * Start server offline: comment out `proxy: npmjs` under `packages` section of `~/.config/verdaccio/config.yaml`, to forbid internet connection
+  * Start server offline: comment out `proxy: npmjs` under `packages` section of `~/.config/verdaccio/config.yaml`, to forbid internet requests
   * Setup path for cached packages: set `storage` of `config.yaml`. It is `~/.local/share/verdaccio/storage` by default.
   
 Then we can use the server on both the internet machine and offline machine by
