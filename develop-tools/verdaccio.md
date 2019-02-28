@@ -1,7 +1,7 @@
 
 # Offline npm registry
 
-Verdaccio is a proxy server for npm registry, which can cache packages and be used offline.
+Verdaccio is a proxy server for npm registry, which can cache packages and be used offline. It can also be used as private npm registry for publishing package locally.
 
 ## Install
 
