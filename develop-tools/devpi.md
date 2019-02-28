@@ -37,3 +37,10 @@ nohup devpi-server --start --serverdir $SERVER_DIr --offline-mode --host 0.0.0.0
 ```
 
 The `SERVER_DIR` points to the path of the cached packages.
+
+## Problems
+
+`virtualenv` is not very compatible with devpi, i.e. you can use `virtualenv` on an offline machine. Because `virtualenv` require `pip`, `wheel`, `setuptools` and `pkg_resources`, while `pkg_resources` is not a separate package but need internet connection.
+
+If you try to reuse existing virtual environment, you need to change the shebang (the first line starting with `#!`) of all the scripts in `bin` directory, and `VIRTUAL_ENV` in `bin/activate`.
+
