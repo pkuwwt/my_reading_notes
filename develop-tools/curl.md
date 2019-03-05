@@ -66,7 +66,7 @@ The file contents are stored in `request.files`.
 #### Show response for POST
 
 ```bash
-curl -H "Accept application/json;*/*" -X POST http://localhost/upload
+curl -H "Accept:application/json;*/*" -X POST http://localhost/upload
 ```
 
 ### DELETE
