@@ -28,6 +28,14 @@ command2
 EOF
 ```
 
+### Resume copy of partial file
+
+```
+rsync -P -e ssh remoteuser@remotehost:/remote/path /local/path
+```
+
+where `-P` is equal to `--partial --progress`.
+
 ### Shortcuts for SSH
 Add shortcut in `~/.ssh/config` as follows: 
 ```conf
@@ -67,6 +75,7 @@ ssh -R portB:localA:portA serverB
 Now, we can access `serverB:portB` as if we are accessing `localA:portA`.
 
 Similary, we can avoid the invoking of tty on `serverB` by `ssh -nNT -R`.
+
 
 ### Reference
   * [SSH Tunnel - Local and Remote Port Forwarding Explained With Examples](https://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)
