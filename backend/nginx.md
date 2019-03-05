@@ -39,6 +39,7 @@ server {
     expires $expires;
 ```
 
+Then there will be `Cache-Control: max=xxxx` in response header of request for css/js or image files, while html file will be requested from server each time.
 
 ## References
 
