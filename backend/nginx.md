@@ -21,3 +21,27 @@ log_format main '$http_x_forwarded_for - $remote_user [$time_time] '
                 '"$http_referer" "$http_user_agent"';
 access_log /var/log/nginx/access.log main;
 ```
+
+## Setup browser-cache in nginx
+
+```
+# Expires map
+map $sent_http_content_type $expires {
+    default                    off;
+    text/html                  epoch;
+    text/css                   max;
+    application/javascript     max;
+    ~image/                    max;
+}
+
+server {
+    ...
+    expires $expires;
+```
+
+
+## References
+
+  * [How to Implement Browser Caching with Nginx's header Module on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-implement-browser-caching-with-nginx-s-header-module-on-centos-7)
+  * [Module ngx_http_headers_module](http://nginx.org/en/docs/http/ngx_http_headers_module.html)
+  
