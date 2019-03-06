@@ -17,3 +17,7 @@ sudo chmod a+rx /path /path/to /path/to/data
     * append `LoadModule headers_module /usr/lib/apache2/modules/mod_headers.so` in `apache2.conf`
     * add `Header set Access-Control-Allow-Origin "*"` in `<Directory /var/www/>` section
     * restart apache: `sudo service apache2 restart`
+
+## References
+
+  * [CORS on Apache](https://enable-cors.org/server_apache.html)
