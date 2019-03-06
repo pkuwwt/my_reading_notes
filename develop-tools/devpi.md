@@ -38,6 +38,17 @@ nohup devpi-server --start --serverdir $SERVER_DIr --offline-mode --host 0.0.0.0
 
 The `SERVER_DIR` points to the path of the cached packages.
 
+## How to change the upstream pypi server for devpi
+
+Start the server with a password for root, and login to root with `devpi` (from `devpi-client`), and then change `mirror_url`.
+```
+devpi-server --passwd root
+devpi-server --start 
+devpi use root/pypi
+devpi login root
+devpi index root/pypi mirror_url=“...”
+```
+
 ## Problems
 
 `virtualenv` is not very compatible with devpi, i.e. you cannot use `virtualenv` on an offline machine. Because `virtualenv` require `pip`, `wheel`, `setuptools` and `pkg_resources`, while `pkg_resources` is not a separate package but need internet connection.
