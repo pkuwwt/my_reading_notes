@@ -29,6 +29,23 @@ And then use `crontab` to execute it daily:
 0 0 * * * /your/path/to/backup_mysql.sh
 ```
 
+## Programming
+
+### python
+
+After mysql/mariadb client is installed, `pip install mysql-connector`. The usage example:
+
+```python
+from mysql import connector
+con = connector.connect(user='root', password='xxxx', host='127.0.0.1')
+cur = con.cursor()
+cur.execute('USE mydb')
+cur.execute('SHOW TABLES')
+tables = cur.fetchall()
+for (tbname, ) in tables: print(tbname)
+con.close()
+```
+
 ## Usage in Docker
 
   * Install image: `docker pull mysql`
