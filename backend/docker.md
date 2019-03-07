@@ -25,6 +25,14 @@ Pass `--registry-mirror` to daemon command line or revise `/etc/docker/daemon.js
 }
 ```
 
+## Debug
+
+```
+docker events
+docker run ...
+docker logs <container-name-or-id>
+```
+
 ## References
 
   * [Understanding Volumes in Docker](https://container-solutions.com/understanding-volumes-docker/)
