@@ -46,6 +46,16 @@ for (tbname, ) in tables: print(tbname)
 con.close()
 ```
 
+Example for SQLAlchemy+mysql-connector (`pip install sqlalchemy mysql-connector` first):
+
+```python
+from sqlalchemy import create_engine
+engine = create_engine('mysql+mysqlconnector://user:password@127.0.0.1/mydb')
+con = engine.connect()
+tables = con.execute('SHOW TABLES')
+for (tbname, ) in tables: print(tbname)
+```
+
 ## Usage in Docker
 
   * Install image: `docker pull mysql`
