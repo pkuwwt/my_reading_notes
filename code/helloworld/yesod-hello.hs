@@ -1,6 +1,8 @@
 
--- cabal install yesod
--- runhaskell yesod-hello.hs
+-- From: https://www.yesodweb.com/book/basics
+-- Install dependencies and run:
+--   cabal install yesod
+--   runhaskell yesod-hello.hs
 
 {-# LANGUAGE OverloadedStrings     #-}
 {-# LANGUAGE QuasiQuotes           #-}
