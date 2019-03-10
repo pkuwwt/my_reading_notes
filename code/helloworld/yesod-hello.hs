@@ -1,4 +1,5 @@
 
+-- cabal install yesod
 -- runhaskell yesod-hello.hs
 
 {-# LANGUAGE OverloadedStrings     #-}
