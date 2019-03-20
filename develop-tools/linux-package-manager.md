@@ -16,6 +16,7 @@ Local packages:
   * uninstall: `sudo dpkg --remove package`
   * query file: `dpkg-query -S /path/to/file`
   * info: `dpkg -p package`
+  * info of local deb: `dpkg -I package.deb`
   * list files: `dpkg -L package`
 
 ## yum
@@ -45,4 +46,4 @@ Local packages:
   
   ## References:
   
-    * [20 Practical Examples of RPM Commands in Linux](https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/)
+   * [20 Practical Examples of RPM Commands in Linux](https://www.tecmint.com/20-practical-examples-of-rpm-commands-in-linux/)
