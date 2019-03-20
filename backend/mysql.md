@@ -29,6 +29,16 @@ And then use `crontab` to execute it daily:
 0 0 * * * /your/path/to/backup_mysql.sh
 ```
 
+## Import sql file
+
+We can import sql from a dumped file:
+
+```
+mysql -h127.0.0.1 -uroot -p database <db.sql
+```
+
+In Linux, the import may be very slow. Just add `set autocommit=0;` at the beginning of sql file and `commit;` at the end of it.
+
 ## Programming
 
 ### python
