@@ -39,6 +39,46 @@ mysql -h127.0.0.1 -uroot -p database <db.sql
 
 In Linux, the import may be very slow. Just add `set autocommit=0;` at the beginning of sql file and `commit;` at the end of it.
 
+## Import from .mdb
+
+Install `mdbtools` first.
+
+```bash
+#!/bin/bash
+
+if (( $# < 2 )); then
+    echo "USAGE: $0 input.mdb database"
+    exit
+fi
+
+TABLES=$(mdb-tables -1 $1)
+
+MUSER="root"
+MPASS="yourpassword"
+MDB="$1"
+DB="$2"
+
+MYSQL=$(which mysql)
+
+CMD="$MYSQL -u$MUSER -p$PASS"
+
+EXPORT="mdb-export -D '%Y-%m-%d %H:%M:%S' -I mysql"
+
+$CMD -e "CREATE DATABASE IF NOT EXISTS $DB"
+
+for t in $TABLES
+do
+    $CMD $DB -e "DROP TABLE IF EXISTS $t"
+done
+
+mdb-schema $1 mysql | $CMD $DB
+
+for t in $TABLES
+do
+    { echo "set autocommit=0;"; $EXPORT $MDB $t; echo "commit;" } | $CMD $DB
+done
+```
+
 ## Programming
 
 ### python
