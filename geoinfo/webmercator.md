@@ -1,7 +1,7 @@
 
 # WebMercator
 
-WebMercator is a transformation between uniform square [0,1]x[0,1] and the global interval [-pi,pi]x[-0.5pi,0.5pi].
+WebMercator is a transformation between uniform square [0,1]x[0,1] and the global interval [-pi,pi]x[-0.5pi,0.5pi]. The main usage of WebMercator is to encode the tiling map service as a quad tree. Otherwise, we need two quad trees if we use geographic coordinates to divide the globe.
 
 ## Uniform to radian
 ```
@@ -12,7 +12,7 @@ y3 = (y2 - 1) / (y2 + 1)
 lat = arcsin(y3)
 ```
 
-After the transformation, we can get the interval [-85.05112, 85.05112] of the latitude.
+After the transformation, we can get the interval [-85.05112, 85.05112] of the latitude. So in WebMercator, the polar regions are disgarded.
 
 ## Radian to uniform
 
