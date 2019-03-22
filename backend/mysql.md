@@ -13,6 +13,7 @@
   * Show Table's Columns:
     * `DESCRIBE table_name;`
     * `SHOW COLUMNS FROM table_name;`
+    * `SHOW CREATE TABLE table_name;`
 
 ## Backup MySQL by `mysqldump`
 
