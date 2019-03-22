@@ -9,7 +9,7 @@
   * Change Current Database: `USE database_name`;
   * Create Database: `CREATE DATABASE [IF NOT EXISTS] database_name;`
   * Show Tables: `SHOW Tables;`
-  * Show Views: `SHOW FULL TABLES [IN database_name] WHERE TABLE_TYPE LIKE 'VIEW';
+  * Show Views: `SHOW FULL TABLES [IN database_name] WHERE TABLE_TYPE LIKE 'VIEW';`
   * Show Table's Columns:
     * `DESCRIBE table_name;`
     * `SHOW COLUMNS FROM table_name;`
