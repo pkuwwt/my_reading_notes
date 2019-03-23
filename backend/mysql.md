@@ -14,6 +14,7 @@
     * `DESCRIBE table_name;`
     * `SHOW COLUMNS FROM table_name;`
     * `SHOW CREATE TABLE table_name;`
+  * Rename table: `ALTER TABLE db1.tb1 db2.tb2;`  
 
 ## Backup MySQL by `mysqldump`
 
