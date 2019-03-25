@@ -8,4 +8,5 @@
   * show current database name: `SELECT current_database();`
   * list databases: `\l`
   * connect to a new database: `\c dbname`
+  * show tables: `\dt`
   
