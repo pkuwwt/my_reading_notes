@@ -38,5 +38,5 @@ SELECT *,ST_Distance(where_is, ST_Point(lon, lat)) as dist FROm mytable WHERE ST
 However, ordering results might be slow, so we should create an gist index:
 
 ```SQL
-CREATE IDNEX myindex ON mytable USIGN gist(where_is);
+CREATE IDNEX myindex ON mytable USING gist(where_is);
 ```
