@@ -12,6 +12,8 @@
   
 ## PostGIS
 
+In order to use PostGIS in a database, we should execute `create extension postgis;` the first timei login the database.
+
 ### Add a Geography column
 
 ```SQL
