@@ -10,6 +10,18 @@
   * connect to a new database: `\c dbname`
   * show tables: `\dt`
   
+### Add integer ID column
+
+```
+ALTER TABLE mytable ADD COLUMN id SERIAL PRIMARY KEY;
+```
+  
+## Difference between PostgresSQL and MySQL
+
+  * MySQL use back tick ` to quote table/column name, but Postgres use double quotes
+  * MySQL use both double quotes and single quotes for string, but Postgres use only single quotes
+  * MySQL use `t` or `f` for boolean, Postgres use `TRUE` or `FALSE`
+  
 ## PostGIS
 
 In order to use PostGIS in a database, we should execute `create extension postgis;` the first timei login the database.
