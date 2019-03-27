@@ -33,6 +33,12 @@ ALTER TABLE <table_name> ADD PRIMARY KEY (id);
 UPDATE table1 SET col1 (SELECT table2.val FROM table2 WHERE table1.val = table2.val);
 ```
   
+### Delete column
+
+```SQL
+ALTER TABLE mytable DROP COLUMN col;
+```
+
 ## Difference between PostgresSQL and MySQL
 
   * MySQL use back tick ` to quote table/column name, but Postgres use double quotes
