@@ -1,5 +1,5 @@
 
-# Postgre
+# Postgres
 
 
 ## Basic Usage
@@ -25,6 +25,12 @@ ALTER TABLE <table_name> DROP CONSTRAINT <table_name>_pkey;
 ALTER TABLE <table_name> RENAME COLUMN <primary_key_candidate> TO id;
 -- Lastly set your new PRIMARY KEY
 ALTER TABLE <table_name> ADD PRIMARY KEY (id);
+```
+
+### Set column based on other table
+
+```SQL
+UPDATE table1 SET col1 (SELECT table2.val FROM table2 WHERE table1.val = table2.val);
 ```
   
 ## Difference between PostgresSQL and MySQL
