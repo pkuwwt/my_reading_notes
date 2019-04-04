@@ -60,5 +60,5 @@ nc -zvw3 ip port
 
 nmap ip -p port
 
-telnet host_or_ip port
+telnet ip port
 ```
