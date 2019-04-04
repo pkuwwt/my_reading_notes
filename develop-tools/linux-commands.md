@@ -49,3 +49,16 @@ where `find . -regex` used to find all filenames in current dir ending with .cpp
 
   * Find files modified in 30 minutes and save it to a tarball: `find dir -type f -cmin -30 -print0 | tar czvf out.tar.gz --null -T -`
   
+  
+## Network
+
+### Three ways to check if a port is open
+
+```bash
+# z means zero I/O mode to scan, v means verbose, w3 means timeout with 3s
+nc -zvw3 ip port
+
+nmap ip -p port
+
+telnet host_or_ip port
+```
