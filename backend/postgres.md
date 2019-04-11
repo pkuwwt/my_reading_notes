@@ -9,6 +9,12 @@
   * list databases: `\l`
   * connect to a new database: `\c dbname`
   * show tables: `\dt`
+  * dump databases:
+    * dump single database as text: `pg_dump dbname >backup.sql`
+    * dump single database as binary: `pg_dump -Fc dbname >backup.dump`
+    * dump all databases as text `pg_dumpall >backup.sql`
+    * restore from text: `psql -f backup.sql postgres` (it's OK to connect any database including `postgres`)
+    * restore from binary: `pg_restore -d dbname backup.dump`
   
 ### Add integer ID column
 
