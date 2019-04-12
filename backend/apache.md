@@ -1,6 +1,11 @@
 
 # Apache
 
+## Management
+
+  * List loaded modules: `apache2ctl -t -D DUMP_MODULES`
+  * Restart apache: `apache2ctl restart`
+
 ## How to use symlinks to host files in different directories?
 
 Just make sure all the parent paths of the destination path of the symlink are accessible by Apache.
