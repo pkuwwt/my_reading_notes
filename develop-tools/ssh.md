@@ -21,6 +21,7 @@
     * execute remote command: `ssh username@server-host 'echo'`
     * execute local script on remote server: `ssh username@server-host 'bash -s' < local_script.sh`
     * execute multiple commands on remote server:
+    * continue partial downloaded file: `echo 'get -a /path/to/file_or_dir' | sftp -r server`
 ```bash
 ssh username@server-host 'bash-s' <<EOF
 command1
