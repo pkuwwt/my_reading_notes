@@ -7,7 +7,7 @@ This intallation guide works for [MediaWiki 1.3.4](https://github.com/wikimedia/
 
 ### Outline
 
-  * Download xml dump [zhwiki-20190320-pages-articles-multistream.xml.bz2](ftp://ftpmirror.your.org/pub/wikimedia/dumps/zhwiki/20190320/zhwiki-20190320-pages-articles-multistream.xml.bz2) from https://dumps.wikimedia.org/mirrors.html 
+  * Download xml dump like [zhwiki-20190320-pages-articles-multistream.xml.bz2](ftp://ftpmirror.your.org/pub/wikimedia/dumps/zhwiki/20190320/zhwiki-20190320-pages-articles-multistream.xml.bz2) from https://dumps.wikimedia.org/mirrors.html 
   * Compile mwdumper: need to revise the code
   * Convert xml to sql by mwdumper
   * Configure MySQL: set the encoding to `utf8mb4`
