@@ -3,7 +3,7 @@
 
 ## Installation
 
-This intallation guide works for [MediaWiki 1.9.0](https://github.com/wikimedia/mediawiki), [mwdumper 1.25](https://gerrit.wikimedia.org/r/mediawiki/tools/mwdumper) and Ubuntu16.04.
+This intallation guide works for [MediaWiki 1.32](https://github.com/wikimedia/mediawiki), [mwdumper 1.25](https://gerrit.wikimedia.org/r/mediawiki/tools/mwdumper) and Ubuntu16.04.
 
 ### Outline
 
