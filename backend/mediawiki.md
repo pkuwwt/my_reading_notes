@@ -94,3 +94,8 @@ EOF
 ```
 mysql -h 127.0.0.1 -u root -p mywiki <zhwiki-20190320-pages-articles-multistream.sql
 ```
+
+
+## References
+
+  * [Running Mediawiki Your Own Copy Restore Whole MediaWiki Backup](https://dengruo.com/blog/running-mediawiki-your-own-copy-restore-whole-mediwiki-backup)
