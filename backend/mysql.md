@@ -116,3 +116,8 @@ for (tbname, ) in tables: print(tbname)
   * Remove Container: `docker rm mysql-test`
   * Connect MySQL: `mysql -h 127.0.0.1 -P 3309 -uroot -pmysql-test`
   
+
+## Issues
+
+  * The table name of MySQL in Linux is case-sensitive, while case-insensitive in Windows. Weird!
+  
