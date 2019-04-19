@@ -57,6 +57,11 @@ var count = libprime.getPrimes(under, a);
 var primes = a.toArray().slice(0, count);
 ```
 
+## node-gyp
+
+`node-gyp` is a tool used to build native code for node.js. However, it will try to download node-headers or compiled code from the web. To forbid this behavior, we can `node-gyp --nodedir /path/to/node/root rebuild` in a package dir or `npm rebuild --nodedir /path/to/node/root package-name`.
+
+
 ## References
 
   * [Writing to Files in Node.js](https://stackabuse.com/writing-to-files-in-node-js/)
