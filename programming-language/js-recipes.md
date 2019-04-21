@@ -58,6 +58,11 @@ A iterable object is an object with `@@iterator` property, this property is crea
 
 So we can make an object `obj` iterable by defining `obj[Symbol.iterator]`, or make a constructor `F`'s instances iterable by defining `F.prototype[Symbol.iterator]`, or make a class iterable by defining its member function `[Symbol.iterator]`. We can also make a promised object iterable by defining a promised `[Symbol.asyncIterator]`.
 
+## Debounce and Throttle
+
+  * debounce (防抖): only execute FN when called if there is no calling in WAIT msec, else restart the timer 
+  * throttle (节流): execute FN at most one time in WAIT msec
+
 ### Reference
 
   * [Understanding the For...of Loop in JavaScript](https://blog.bitsrc.io/understanding-the-for-of-loop-in-javascript-8aded97d7ef8)
