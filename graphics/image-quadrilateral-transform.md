@@ -7,4 +7,5 @@ The 2D Perspective Transform can be used to this task, which convert a straight 
 ## References
 
   * [Perspective Transform Estimation](https://web.archive.org/web/20150222120106/xenia.media.mit.edu/~cwren/interpolator/)
+  * [How does perspective transform work in PIL](https://stackoverflow.com/questions/14177744/how-does-perspective-transformation-work-in-pil)
   
