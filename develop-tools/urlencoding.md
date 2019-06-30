@@ -59,3 +59,5 @@ we get (assuming it is encoded as UTF8):
 ```
 %e6%89%8b%e6%9c%ba
 ```
+
+NOTE: the `urlencode` function converts all characters to their hex forms, which is not necessary.
