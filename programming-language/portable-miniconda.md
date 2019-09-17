@@ -26,7 +26,12 @@ _conda install -p %~dp0\your-env-name psycopg2
   
 ## Scripts
 
-Place the `Miniconda3-latest-Windows-x86_64.exe` and the following scripts in the same directory. And run `install.bat` and `create_env.bat`. Revise the `create_env.bat` as you wish.
+Place the `Miniconda3-latest-Windows-x86_64.exe` and the following scripts in the same directory. 
+
+  * run `install.bat` to install miniconda
+  * revise `create_env.bat` as you wish, i.e. the `NAME` and the packages you want to install
+  * run `create_env.bat`
+  * the `python.bat` in your installnation will be runnable.
 
 `install.bat`:
 ```cmd
