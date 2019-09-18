@@ -121,8 +121,8 @@ echo -en `curl -X DELETE http://xxx.com/users/1`
 
 # Implement as a function
 Ascii2uni(){
-    while read -r line; do
-        echo -en "$line"
+    while read -r; do
+        echo -e "$REPLY"
     done <"${1:-/dev/stdin}"
 }
 curl -X DELETE http://xxx.com/users/1 | Ascii2uni
