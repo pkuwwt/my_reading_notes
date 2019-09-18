@@ -118,6 +118,14 @@ http://localhost:8888/finance/php/login.php
 ```
 curl -X DELETE http://xxx.com/users/1 | ascii2uni -a U -q
 echo -en `curl -X DELETE http://xxx.com/users/1`
+
+# Implement as a function
+Ascii2uni(){
+    while read -r line; do
+        echo -en "$line"
+    done <"${1:-/dev/stdin}"
+}
+curl -X DELETE http://xxx.com/users/1 | Ascii2uni
 ```
 
 ## References
