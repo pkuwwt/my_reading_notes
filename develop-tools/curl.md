@@ -3,10 +3,28 @@
 
 ## Use cURL to test backend API
 
+### Authentication
+
+Use username and password in basic authentication
+```bash
+curl -u username:password http://xxx.com
+```
+
+Show prompt for password
+```bash
+curl -su username http://xxx.com
+```
+
 ### GET
 
 ```bash
 curl --request GET http://myhost/notes/rest
+```
+
+Encoding special characters in query string
+
+```bash
+curl -G http://xxx.com/users --data-urlencode 'page[size]=10' --data-urlencode 'page[number]=1'
 ```
 
 ### POST
