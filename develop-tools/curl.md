@@ -113,6 +113,12 @@ curl --request POST --data "user=alvin&password=foobar" \
 http://localhost:8888/finance/php/login.php
 ```
 
+## Print Unicode in response json in terminal
+
+```
+curl -X DELETE http://xxx.com/users/1 | ascii2uni -a U -q
+echo -en `curl -X DELETE http://xxx.com/users/1`
+```
 
 ## References
 
