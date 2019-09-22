@@ -1,3 +1,8 @@
+/**
+ * npm init
+ * npm install experss serve-index minimist
+ * node fileserver.js -h
+ * */
 
 const express = require('express');
 const serveIndex = require('serve-index');
