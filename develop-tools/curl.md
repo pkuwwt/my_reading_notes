@@ -3,10 +3,28 @@
 
 ## Use cURL to test backend API
 
+### Authentication
+
+Use username and password in basic authentication
+```bash
+curl -u username:password http://xxx.com
+```
+
+Show prompt for password
+```bash
+curl -su username http://xxx.com
+```
+
 ### GET
 
 ```bash
 curl --request GET http://myhost/notes/rest
+```
+
+Encoding special characters in query string
+
+```bash
+curl -G http://xxx.com/users --data-urlencode 'page[size]=10' --data-urlencode 'page[number]=1'
 ```
 
 ### POST
@@ -95,6 +113,20 @@ curl --request POST --data "user=alvin&password=foobar" \
 http://localhost:8888/finance/php/login.php
 ```
 
+## Print Unicode in response json in terminal
+
+```
+curl -X DELETE http://xxx.com/users/1 | ascii2uni -a U -q
+echo -en `curl -X DELETE http://xxx.com/users/1`
+
+# Implement as a function
+Ascii2uni(){
+    while read -r; do
+        echo -e "$REPLY"
+    done <"${1:-/dev/stdin}"
+}
+curl -X DELETE http://xxx.com/users/1 | Ascii2uni
+```
 
 ## References
 

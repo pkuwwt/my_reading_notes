@@ -5,6 +5,10 @@
 
 ## Orientation
 
+## libfacedetection
+
+[libfacedetection](https://github.com/ShiqiYu/libfacedetection) is a very quick open source library for face detection, said it can reach 1500fps.
+
 ## References
 
   * [Deep face recognition with Keras, Dlib and OpenCV](http://krasserm.github.io/2018/02/07/deep-face-recognition/)

@@ -21,6 +21,7 @@
     * execute remote command: `ssh username@server-host 'echo'`
     * execute local script on remote server: `ssh username@server-host 'bash -s' < local_script.sh`
     * execute multiple commands on remote server:
+    * continue partial downloaded file: `echo 'get -a /path/to/file_or_dir' | sftp -r server`
 ```bash
 ssh username@server-host 'bash-s' <<EOF
 command1
@@ -76,6 +77,24 @@ Now, we can access `serverB:portB` as if we are accessing `localA:portA`.
 
 Similary, we can avoid the invoking of tty on `serverB` by `ssh -nNT -R`.
 
+## Allow only specified IPs
+
+In `/etc/hosts.allow`
+
+```
+sshd: 192.168.3.15
+sshd: 192.168.2.0/255.255.255.0
+sshd: 127.0.0.1
+sshd: [::1]
+```
+
+In `/etc/hosts.deny`
+
+```
+sshd: ALL
+```
+
+The change will take effects immediately, so be CAREFULL.
 
 ### Reference
   * [SSH Tunnel - Local and Remote Port Forwarding Explained With Examples](https://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)

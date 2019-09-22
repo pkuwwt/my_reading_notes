@@ -33,6 +33,21 @@ docker run ...
 docker logs <container-name-or-id>
 ```
 
+## Change Storage Dir for Docker
+
+Method1: add `-g` option for docker
+  * For ubuntu/debian, set `DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt"` in `/etc/default/docker`
+  * For fedora/centOS, set `other_args="-g /var/lib/testdir"` in `/etc/sysconfig/docker`
+  * Note: this method may not work for ubuntu for some version
+  
+  
+Method2: symlink
+  * stop all containers: `docker kill ${docker ps -q}`
+  * stop docker service: `sudo service docker stop` or `sudo systemctl stop docker`. Make sure there is no docker running: `ps aux | grep docker`
+  * backup `/var/lib/docker`: `sudo tar -czC /var/lib/ docker >docker_backup.tar.gz`
+  * move `/var/lib/docker` to a new place: `sudo mv /var/lib/docker /mnt/disk/docker`
+  * make symlink: `sudo ln -s /mnt/disk/docker /var/lib/docker`
+
 ## References
 
   * [Understanding Volumes in Docker](https://container-solutions.com/understanding-volumes-docker/)

@@ -1,7 +1,7 @@
 
 # Git Recipes
 
-### Revise commit
+## Revise commit
 ### Revise last commit message
 
 ```
@@ -49,6 +49,8 @@ So different from `git merge`, which is often used to add your commits back to m
   * show all tags: `git tag`
   * push tag to remote: `git push origin v1.0`
   * push all tags to remote: `git push --tags`
+  * Change to tag: `git checkout tag_name`
+  * Back to newest commit: `git checkout master`
 
 ## References
 
