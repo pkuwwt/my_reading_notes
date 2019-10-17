@@ -14,6 +14,15 @@
 ## User
 
   * change password: `sudo passwd user`
+  * add a user:
+```
+sudo adduser user_name
+sudo passwd user_name
+```
+  * append a user to a group: `sudo usermod -aG group_name user_name`
+  * add a user to sudo
+    * `sudo visudo`
+	* add a line `user_name ALL=(ALL) ALL`
 
 ## Text Processing
 
