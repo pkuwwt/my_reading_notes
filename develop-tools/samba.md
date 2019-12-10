@@ -36,12 +36,30 @@ Fifth, restart `smbd` service
 sudo service smbd restart
 ```
 
+By default, samba use `smb ports = 445 139`, we can change it to other ports by setting it in `/etc/samba/smb.conf`
+
+```
+smb ports = 5445 5139
+```
+
 ## Client
 
 ### Linux
 
+```
+smbclient \\host_or_ip\samba
+```
+
 ### Windows
 Access the shared samba dir by `\\host_ip_address\samba`.
+
+If the samba server `192.168.1.12` has changed its port to `5139`, then we can bind it to windows disk drive by
+
+```
+netsh interface portproxy add v4tov4 listenaddress=127.0.0.1 listenport=445 connectaddress=192.168.1.12 connectport=5139
+REM reboot machine
+net use Z: \\127.0.0.1\samba
+```
 
 ## Reference
 
