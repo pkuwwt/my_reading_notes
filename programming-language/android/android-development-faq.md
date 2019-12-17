@@ -15,3 +15,19 @@ Two methods:
   * File -> Invalidate Cache / Restart
   * Delete all `*.iml` files and `.idea` directory, and then reopen project.
 
+
+## Install apk to devices
+
+Use `$ANDROID_SDK_ROOT/platform-tools/adb`.
+
+List ids of the connected devices
+```
+adb devices
+```
+
+Install apk
+```
+adb -s device-id install -r /path/to/apk
+```
+where `-r` means replacing existed app.
+
