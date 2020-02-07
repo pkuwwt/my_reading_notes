@@ -1,6 +1,39 @@
 
 # Git Recipes
 
+## Branch
+
+### Delete local branch
+
+```
+git branch -d my-branch
+```
+
+### Delete remote branch
+
+```
+git push origin --delete my-remote-branch
+```
+
+### Create local branch
+
+```
+git checkout -b new-branch
+```
+
+### Create remote branch
+
+```
+git checkout my-local-branch
+git push -u origin my-remote-branch
+```
+
+### Switch to a remote branch
+
+```
+git checkout -b local_branch_name origin/remote-branch-name
+```
+
 ## Revise commit
 ### Revise last commit message
 
