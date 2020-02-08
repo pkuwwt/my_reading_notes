@@ -56,6 +56,21 @@ git commit --amend --author "new author"
 
 NB: only use `amend` in local repositories.
 
+### Revert last commit
+
+```
+git reset HEAD~
+```
+
+NB: The working tree is not changed, remaining unstaged.
+
+### Revert last merge
+
+```
+get reset --hard merge-hash-id
+```
+
+NB: The working tree is not changed, remaining unstaged.
 
 ## Rebasing
 
