@@ -1,6 +1,21 @@
 
 # Git Recipes
 
+## Log
+
+### Show git log graph
+
+```
+git log --graph --all --decorate --oneline
+git log --pretty=format:"%h - %an, %ar : %s" --graph
+```
+
+### Show diff with only file names
+
+```
+git diff HEAD~ HEAD --name-only
+```
+
 ## Branch
 
 ### Delete local branch
