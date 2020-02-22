@@ -1,6 +1,15 @@
 
 # JavaScript Recipes
 
+## Python-style `__name__ == '__main__'`
+
+```javascript
+const main = () => {};
+if (typeof require !== 'undefined' && require.main === module) {
+	main()
+}
+```
+
 ## Inheritance
 
 ### prototype based inheritance
